@@ -71,6 +71,7 @@ const ram = txt => { const m = /(\d+(?:[.,]\d+)?)\s*(GB|Go|TB|To)\b/i.exec(txt |
       pass.push({ score: gb + use + (c.date ? new Date(c.date).getFullYear() - 2000 : 0) + (isAcc && compat ? 5 : 0) + (/fran[cç]ais|anglais|english|qwerty us|us international/i.test(blob) ? 3 : 0), id, item: { kind: isAcc ? 'accessory' : 'device', secondary: !!r.secondary, sold: isAcc ? 'separate' : 'main', compat: String(compat).slice(0, 120), label: title.slice(0, 120) + ' (' + code + ')', brand: c.brand, mpn: code, rayon: r.id, photo: img, photoSrc: 'Icecat', factsSrc: 'https://icecat.biz', facts: { [LANG]: facts }, desc: String(desc).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 600),
         product: { ico: r.ico, brand: c.brand, n: { [LANG]: title.slice(0, 100), en: title.slice(0, 100) }, cat: r.cat, tags: [c.brand, r.id], ref: 0 } } });
       console.log('✔ candidat', r.id, c.brand, code, gb ? gb + ' Go' : '', 'score', pass[pass.length - 1].score);
+      if (/\/img\/brand\//.test(img || '')) continue;
       await new Promise(z => setTimeout(z, 600));
     }
     if (r.accessory) pass.forEach(p => accPool.push(p));
