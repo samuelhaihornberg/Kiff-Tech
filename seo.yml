@@ -2,7 +2,7 @@ name: seo-et-images
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'catalog.json', 'seo.js', 'icecat.js', 'server.js']
+    paths: ['index.html', 'catalog.json', 'seo.js', 'icecat.js', 'import.js', 'rayons.json', 'server.js']
   schedule:
     - cron: '17 3 * * *'
   workflow_dispatch:
@@ -16,6 +16,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Import catalogue Icecat (top 1 par rayon)
+        continue-on-error: true
+        env:
+          ICECAT_USER: SAMUELhai
+          ICECAT_PASS: ${{ secrets.ICECAT_PASS }}
+        run: node import.js
       - name: Images Icecat
         continue-on-error: true
         env:
