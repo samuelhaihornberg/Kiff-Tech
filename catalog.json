@@ -54,7 +54,6 @@
    "brand": "Samsung",
    "mpn": "SM-X940NZSTEUB",
    "rayon": "tablet",
-  var CFG={BUYER_DISC:.25,VIP_DISC:.30,MIN_MARGIN:.10,VIP_MIN_MARGIN:.05,MIN_DISC:.10,CAP:.90,FEE_PCT:.034,FEE_FIX:.30,VAT:.17};
    "photo": "https://images.icecat.biz/img/gallery/e7586e040971036ee7331f2e7c21a9d2af4055a2.jpg",
    "photoSrc": "Icecat",
    "factsSrc": "https://icecat.biz",
