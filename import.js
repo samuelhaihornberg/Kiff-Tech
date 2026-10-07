@@ -38,6 +38,7 @@ const ram = txt => { const m = /(\d+(?:[.,]\d+)?)\s*(GB|Go|TB|To)\b/i.exec(txt |
   console.log('   fiches lues:', n, '| candidats:', Object.entries(cand).map(([k, v]) => k + '=' + v.length).join(' '));
   console.log('3/4 Détail + filtre de performance…');
   const cf = path.join(__dirname, 'catalog.json'); let cur = { updated: '', items: {} }; try { cur = JSON.parse(fs.readFileSync(cf, 'utf8')); } catch (e) {}
+  if (!process.env.KEEP) Object.keys(cur.items).forEach(k => { if (/^ic[0-9a-f]{8}$/.test(k)) delete cur.items[k]; });
   let detail = 0, kept = 0; const accPool = [];
   for (const { r } of rx) {
     let list = cand[r.id].sort((x, y) => String(y.date).localeCompare(String(x.date))), seen = 0, pass = [];
@@ -60,14 +61,14 @@ const ram = txt => { const m = /(\d+(?:[.,]\d+)?)\s*(GB|Go|TB|To)\b/i.exec(txt |
       const PRI = /m[ée]moire interne|ram|processeur.*mod|mod[eè]le de processeur|carte graphique|gpu|stockage|capacit[ée] total|taille de l.[ée]cran|r[ée]solution|fr[ée]quence de rafra|taux de rafra|autonomie|batterie|puissance|aspiration|navigation|wi-?fi|bluetooth|hdmi|poids|plateforme|portée|[ée]tanch/i;
       const ok = feats.filter(([k, v]) => k && v && String(v).length < 70 && !/^(couleur|cat[ée]gorie|type de produit)/i.test(k));
       const facts = ok.filter(([k]) => PRI.test(k)).concat(ok.filter(([k]) => !PRI.test(k))).slice(0, 12).map(([k, v]) => k + ' : ' + v);
-      const compat0 = (feats.find(([k]) => /^(produits? compatibles?|compatibilit[ée]|compatible avec|appareils? compatibles?)/i.test(k)) || [])[1] || '';
+      const compat0 = (feats.find(([k]) => /^(produits? compatibles?|compatibilit[ée]|compatible avec|appareils? compatibles?)\s*$/i.test(k)) || [])[1] || '';
       const compat = isAcc ? compat0 : '';
       if (facts.length < 4) { console.log('–', c.brand, code, 'fiche trop pauvre'); continue; }
       const desc = ((d.GeneralInfo || {}).Description || {}).LongDesc || (((d.GeneralInfo || {}).SummaryDescription || {}).ShortSummaryDescription) || '';
       const img = (d.Image && (d.Image.HighPic || d.Image.Pic500x500)) || c.a.HighPic;
       const blob = (title + ' ' + feats.map(f => f.join(' ')).join(' ')).toLowerCase();
       const use = (/gaming|gamer|jeu|game|120 ?hz|144 ?hz|165 ?hz|240 ?hz|rtx|radeon|oled|4k|8k/.test(blob) ? 20 : 0) + (/stream|capture|hdr|dolby|wi-?fi ?(6e|7)|ethernet|hdmi 2\.1|nvme|thunderbolt/.test(blob) ? 20 : 0);
-      pass.push({ score: gb + use + (c.date ? new Date(c.date).getFullYear() - 2000 : 0) + (isAcc && compat ? 5 : 0), id, item: { kind: isAcc ? 'accessory' : 'device', secondary: !!r.secondary, sold: isAcc ? 'separate' : 'main', compat: String(compat).slice(0, 120), label: title.slice(0, 120) + ' (' + code + ')', brand: c.brand, mpn: code, rayon: r.id, photo: img, photoSrc: 'Icecat', factsSrc: 'https://icecat.biz', facts: { [LANG]: facts }, desc: String(desc).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 600),
+      pass.push({ score: gb + use + (c.date ? new Date(c.date).getFullYear() - 2000 : 0) + (isAcc && compat ? 5 : 0) + (/fran[cç]ais|anglais|english|qwerty us|us international/i.test(blob) ? 3 : 0), id, item: { kind: isAcc ? 'accessory' : 'device', secondary: !!r.secondary, sold: isAcc ? 'separate' : 'main', compat: String(compat).slice(0, 120), label: title.slice(0, 120) + ' (' + code + ')', brand: c.brand, mpn: code, rayon: r.id, photo: img, photoSrc: 'Icecat', factsSrc: 'https://icecat.biz', facts: { [LANG]: facts }, desc: String(desc).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 600),
         product: { ico: r.ico, brand: c.brand, n: { [LANG]: title.slice(0, 100), en: title.slice(0, 100) }, cat: r.cat, tags: [c.brand, r.id], ref: 0 } } });
       console.log('✔ candidat', r.id, c.brand, code, gb ? gb + ' Go' : '', 'score', pass[pass.length - 1].score);
       await new Promise(z => setTimeout(z, 600));
