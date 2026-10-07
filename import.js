@@ -6,6 +6,7 @@ const USER = process.env.ICECAT_USER || 'SAMUELhai', PASS = process.env.ICECAT_P
 const MAXD = +process.env.MAX_DETAIL || 300, LANG = process.env.ICECAT_LANG || 'fr', DRY = !!process.env.DRY;
 const BASE = process.env.ICECAT_BASE || 'https://data.icecat.biz/export/freexml.int';
 const R = JSON.parse(fs.readFileSync(path.join(__dirname, 'rayons.json'), 'utf8'));
+const EXCL = new RegExp(R.exclude || 'cover|case|housse|étui|coque|pogo|dock|protector|protecteur|strap|bracelet de rechange|cable|câble|adapter|adaptateur|charger|chargeur|stylus|pen tip|film|refill|filtre|brosse|serpillière', 'i');
 const auth = { 'User-Agent': 'KiffTechBot/1.0', Authorization: 'Basic ' + Buffer.from(USER + ':' + PASS).toString('base64') };
 const open = async (u, h) => { const r = await fetch(u, { headers: h || auth, signal: AbortSignal.timeout(600000) }); if (!r.ok) throw new Error(u + ' → HTTP ' + r.status + (r.status === 401 ? ' (mot de passe Icecat ? secret ICECAT_PASS)' : '')); return r; };
 const text = async u => { let b = Buffer.from(await (await open(u)).arrayBuffer()); if (u.endsWith('.gz')) b = zlib.gunzipSync(b); return b.toString('utf8'); };
@@ -53,7 +54,10 @@ const ram = txt => { const m = /(\d+(?:[.,]\d+)?)\s*(GB|Go|TB|To)\b/i.exec(txt |
       const gb = ram(ramLine && ramLine[1]);
       if (r.minRamGB && gb < r.minRamGB) { console.log('–', c.brand, code, 'RAM', gb || '?', 'Go < ' + r.minRamGB); await new Promise(z => setTimeout(z, 400)); continue; }
       const title = (d.GeneralInfo && d.GeneralInfo.Title) || (c.brand + ' ' + code);
-      const facts = feats.filter(([k, v]) => k && v && String(v).length < 70).slice(0, 10).map(([k, v]) => k + ' : ' + v);
+      if (!r.allowAccessories && EXCL.test(title)) { console.log('–', c.brand, code, 'accessoire écarté'); continue; }
+      const PRI = /m[ée]moire interne|ram|processeur.*mod|mod[eè]le de processeur|carte graphique|gpu|stockage|capacit[ée] total|taille de l.[ée]cran|r[ée]solution|fr[ée]quence de rafra|taux de rafra|autonomie|batterie|puissance|aspiration|navigation|wi-?fi|bluetooth|hdmi|poids|plateforme|portée|[ée]tanch/i;
+      const ok = feats.filter(([k, v]) => k && v && String(v).length < 70 && !/^(couleur|cat[ée]gorie|type de produit)/i.test(k));
+      const facts = ok.filter(([k]) => PRI.test(k)).concat(ok.filter(([k]) => !PRI.test(k))).slice(0, 12).map(([k, v]) => k + ' : ' + v);
       const desc = ((d.GeneralInfo || {}).Description || {}).LongDesc || (((d.GeneralInfo || {}).SummaryDescription || {}).ShortSummaryDescription) || '';
       const img = (d.Image && (d.Image.HighPic || d.Image.Pic500x500)) || c.a.HighPic;
       const blob = (title + ' ' + feats.map(f => f.join(' ')).join(' ')).toLowerCase();
