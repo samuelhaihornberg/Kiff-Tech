@@ -1,21 +1,22 @@
 {
- "brands": ["Samsung","Xiaomi","Apple","Lenovo","ASUS","Sony","Nintendo","Microsoft","Dyson","Roborock","Garmin","Huawei","Logitech","Dreame","Ecovacs","Anker"],
+ "brands": ["Samsung", "Xiaomi", "Apple", "Lenovo", "ASUS", "Sony", "Nintendo", "Microsoft", "Dyson", "Roborock", "Garmin", "Huawei", "Logitech", "Dreame", "Ecovacs", "Anker"],
  "topPerRayon": 1,
  "detailPerRayon": 25,
+ "modernYears": 2,
  "rayons": [
-  {"id":"pc","fr":"Ordinateurs & composants","ico":"💻","cat":"eng","match":"notebook|laptop|desktop|workstation|graphics card|processor|motherboard|memory module|solid state|all-in-one|mini pc","minRamGB":16},
-  {"id":"phone","fr":"Smartphones","ico":"📱","cat":"smart","match":"mobile phone|smartphone","minRamGB":16},
-  {"id":"tablet","fr":"Tablettes","ico":"📲","cat":"smart","match":"tablet","minRamGB":16},
-  {"id":"home-appliance","fr":"Électroménager connecté","ico":"🧹","cat":"smart","match":"vacuum|robot|air purifier|washing|refrigerator|dishwasher|oven|coffee","score":"appliance"},
-  {"id":"watch","fr":"Montres & smart devices","ico":"⌚","cat":"smart","match":"smartwatch|watch|activity tracker|television|smart speaker|soundbar|headphones|earbuds","score":"modern"},
-  {"id":"console","fr":"Consoles de jeux","ico":"🎮","cat":"smart","match":"game console|gaming console|handheld","score":"modern"},
-  {"id":"console-gadget","fr":"Gadgets consoles","ico":"🕹️","cat":"smart","match":"game controller|gamepad|gaming headset|racing wheel","score":"modern"},
-  {"id":"office","fr":"Bureau & étagères","ico":"🖥️","cat":"eng","match":"monitor|keyboard|mouse|desk|webcam|docking|office chair","score":"modern"},
-  {"id":"gadget-robot","fr":"Gadgets : mini robots de compagnie","ico":"🤖","cat":"future","match":"companion robot|pet robot|toy robot|educational robot","score":"none","first":true},
-  {"id":"gadget-home","fr":"Gadgets maison","ico":"🏠","cat":"future","match":"smart plug|smart light|smart home|camera|tracker","score":"modern"},
-  {"id":"gadget-sport","fr":"Gadgets sport","ico":"🏃","cat":"future","match":"sport camera|action camera|fitness|bike","score":"modern"},
-  {"id":"gadget-camping","fr":"Gadgets camping","ico":"⛺","cat":"future","match":"power station|solar|flashlight|portable fridge","score":"modern"},
-  {"id":"gadget-culture","fr":"Gadgets culture intérieur & extérieur","ico":"🔭","cat":"future","match":"projector|telescope|drone|binocular","score":"modern"}
- ],
- "modernYears": 2
+  {"id": "pc", "fr": "Ordinateurs & composants", "ico": "💻", "cat": "eng", "match": "notebook|laptop|desktop|workstation|graphics card|processor|motherboard|memory module|solid state|all-in-one|mini pc", "minRamGB": 16},
+  {"id": "phone", "fr": "Smartphones", "ico": "📱", "cat": "smart", "match": "mobile phone|smartphone", "minRamGB": 16},
+  {"id": "tablet", "fr": "Tablettes", "ico": "📲", "cat": "smart", "match": "tablet", "minRamGB": 16},
+  {"id": "home-appliance", "fr": "Électroménager connecté", "ico": "🧹", "cat": "smart", "match": "vacuum|robot|air purifier|washing|refrigerator|dishwasher|oven|coffee", "score": "appliance"},
+  {"id": "watch", "fr": "Montres & smart devices", "ico": "⌚", "cat": "smart", "match": "smartwatch|smart watch|activity tracker|television|(^| )tv( |$)", "score": "modern"},
+  {"id": "audio", "fr": "Audio & streaming", "ico": "🎧", "cat": "smart", "match": "soundbar|smart speaker|headphones|earbuds|headset", "score": "modern"},
+  {"id": "console", "fr": "Consoles de jeux", "ico": "🎮", "cat": "smart", "match": "game console|gaming console|handheld", "score": "modern"},
+  {"id": "console-gadget", "fr": "Gadgets consoles", "ico": "🕹️", "cat": "smart", "match": "game controller|gamepad|gaming headset|racing wheel", "score": "modern", "allowAccessories": true},
+  {"id": "office", "fr": "Bureau & étagères", "ico": "🖥️", "cat": "eng", "match": "monitor|keyboard|mouse|webcam|docking station|office chair|desk", "score": "modern"},
+  {"id": "gadget-robot", "fr": "Gadgets : mini robots de compagnie", "ico": "🤖", "cat": "future", "match": "companion robot|pet robot|toy robot|educational robot", "score": "none", "first": true},
+  {"id": "gadget-home", "fr": "Gadgets maison", "ico": "🏠", "cat": "future", "match": "smart plug|smart light|smart home|camera|tracker", "score": "modern"},
+  {"id": "gadget-sport", "fr": "Gadgets sport", "ico": "🏃", "cat": "future", "match": "sport camera|action camera|fitness|bike", "score": "modern"},
+  {"id": "gadget-camping", "fr": "Gadgets camping", "ico": "⛺", "cat": "future", "match": "power station|portable power|solar panel|flashlight|portable fridge|camping", "score": "modern"},
+  {"id": "gadget-culture", "fr": "Gadgets culture intérieur & extérieur", "ico": "🔭", "cat": "future", "match": "projector|telescope|drone|binocular", "score": "modern"}
+ ]
 }
