@@ -1,0 +1,33 @@
+name: seo-et-images
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'catalog.json', 'seo.js', 'icecat.js', 'server.js']
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Images Icecat
+        continue-on-error: true
+        env:
+          ICECAT_USER: SAMUELhai
+        run: node icecat.js
+      - name: Pages SEO, sitemap, flux Google Shopping, publications
+        run: |
+          OWNER=$(echo "$GITHUB_REPOSITORY_OWNER" | tr 'A-Z' 'a-z'); REPO=$(echo "${GITHUB_REPOSITORY#*/}" | tr 'A-Z' 'a-z')
+          if [ "$REPO" = "$OWNER.github.io" ]; then SITE="https://$OWNER.github.io"; else SITE="https://$OWNER.github.io/$REPO"; fi
+          SITE_URL="$SITE" node seo.js
+      - name: Publier
+        run: |
+          git config user.name "kiff-bot"; git config user.email "bot@users.noreply.github.com"
+          for f in catalog.json p sitemap.xml robots.txt feed social; do [ -e "$f" ] && git add "$f"; done
+          git diff --cached --quiet || (git commit -m "SEO auto" && git push)
