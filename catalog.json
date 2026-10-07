@@ -1,389 +1,6 @@
 {
  "updated": "2026-10-07",
  "items": {
-  "icbe1dede1": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "",
-   "label": "Samsung EF-DX840BBEGIT accessoire d'étui de téléphone mobile (EF-DX840BBEGIT)",
-   "brand": "Samsung",
-   "mpn": "EF-DX840BBEGIT",
-   "rayon": "acc-phone",
-   "photo": "https://images.icecat.biz/img/gallery/b4c6b8fb8c995dc4b71a6aed28d30b020e905a84.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": []
-   },
-   "desc": "Samsung EF-DX840BBEGIT",
-   "product": {
-    "ico": "🔌",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX840BBEGIT accessoire d'étui de téléphone mobile",
-     "en": "Samsung EF-DX840BBEGIT accessoire d'étui de téléphone mobile"
-    },
-    "cat": "smart",
-    "tags": [
-     "Samsung",
-     "acc-phone"
-    ],
-    "ref": 0
-   }
-  },
-  "ic72d79fbd": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Galaxy S26 FE",
-   "label": "Samsung EF-ES741CPEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Rose (EF-ES741CPEGCA)",
-   "brand": "Samsung",
-   "mpn": "EF-ES741CPEGCA",
-   "rayon": "acc-phone",
-   "photo": "https://images.icecat.biz/img/gallery/9a1e60384176ae01a3dbe713d692bda06df9794e.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Taille maximale de l’écran : 17 cm (6.7\")",
-     "Coloration de surface : Monochromatique",
-     "Compatibilité : Galaxy S26 FE",
-     "Type d'étui : Housse",
-     "Matériel : Silicone",
-     "Recharge sans fil : Oui",
-     "Compatible MagSafe : Oui",
-     "Compatibilité de marque : Samsung",
-     "Support de bureau : Non",
-     "Type de fermeture : Non applicable",
-     "Pochette de carte : Non",
-     "Résistant aux traces de doigts : Oui"
-    ]
-   },
-   "desc": "Samsung EF-ES741CPEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Rose",
-   "product": {
-    "ico": "🔌",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-ES741CPEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Rose",
-     "en": "Samsung EF-ES741CPEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Rose"
-    },
-    "cat": "smart",
-    "tags": [
-     "Samsung",
-     "acc-phone"
-    ],
-    "ref": 0
-   }
-  },
-  "ic557a4c04": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Galaxy S26 FE",
-   "label": "Samsung EF-SS741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Bleu, Violet (EF-SS741CLEGCA)",
-   "brand": "Samsung",
-   "mpn": "EF-SS741CLEGCA",
-   "rayon": "acc-phone",
-   "photo": "https://images.icecat.biz/img/gallery/94083cbf312dabfda26f68524e19a51ed8d9d7f1.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Taille maximale de l’écran : 17 cm (6.7\")",
-     "Coloration de surface : Monochromatique",
-     "Compatibilité : Galaxy S26 FE",
-     "Type d'étui : Housse",
-     "Recharge sans fil : Oui",
-     "Compatible MagSafe : Oui",
-     "Compatibilité de marque : Samsung",
-     "Support de bureau : Non",
-     "Type de fermeture : Non applicable",
-     "Pochette de carte : Non",
-     "Résistant aux traces de doigts : Oui",
-     "Protection anti-jaunissement : Oui"
-    ]
-   },
-   "desc": "Samsung EF-SS741CLEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Bleu, Violet",
-   "product": {
-    "ico": "🔌",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-SS741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Bleu, Viole",
-     "en": "Samsung EF-SS741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Bleu, Viole"
-    },
-    "cat": "smart",
-    "tags": [
-     "Samsung",
-     "acc-phone"
-    ],
-    "ref": 0
-   }
-  },
-  "iceb4555de": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Samsung Galaxy Tab S12+",
-   "label": "Samsung EF-DX840BBEGTR étui pour tablette 31,5 cm (12.4\") Housse Noir (EF-DX840BBEGTR)",
-   "brand": "Samsung",
-   "mpn": "EF-DX840BBEGTR",
-   "rayon": "acc-tablet",
-   "photo": "https://images.icecat.biz/img/brand/high/26_0fa895b43fbb414f966b375ded38e77b.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Batterie intégrée : Non",
-     "Compatibilité : Samsung Galaxy Tab S12+",
-     "Nombre de positions debout : 1",
-     "Taille maximale de l’écran : 31,5 cm (12.4\")",
-     "Type d'étui : Housse",
-     "Matériel : Plastique",
-     "Compatibilité de marque : Samsung",
-     "Type de fermeture : Fermeture magnétique",
-     "Haut-parleurs intégrés : Non",
-     "Position debout : Oui",
-     "Poche pour cartes de visite : Non",
-     "Boucle élastique pour stylo : Oui"
-    ]
-   },
-   "desc": "Samsung EF-DX840BBEGTR, Housse, Samsung, Samsung Galaxy Tab S12+, 31,5 cm (12.4\")",
-   "product": {
-    "ico": "⌨️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX840BBEGTR étui pour tablette 31,5 cm (12.4\") Housse Noir",
-     "en": "Samsung EF-DX840BBEGTR étui pour tablette 31,5 cm (12.4\") Housse Noir"
-    },
-    "cat": "smart",
-    "tags": [
-     "Samsung",
-     "acc-tablet"
-    ],
-    "ref": 0
-   }
-  },
-  "icfeecb980": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Galaxy Tab S12 Plus",
-   "label": "Samsung EF-BX840PBEGWW étui pour tablette Housse Gris (EF-BX840PBEGWW)",
-   "brand": "Samsung",
-   "mpn": "EF-BX840PBEGWW",
-   "rayon": "acc-tablet",
-   "photo": "https://images.icecat.biz/img/gallery/74edfbf8038d829af414f2a6291b9c295ba8c8f1.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 338 g",
-     "Compatibilité : Galaxy Tab S12 Plus",
-     "Nombre de positions debout : 2",
-     "Type d'étui : Housse",
-     "Compatibilité de marque : Samsung",
-     "Position debout : Oui",
-     "Fonctions de protection : Résistant aux impacts, Résistant aux rayures",
-     "Protection d’écran intégrée : Non",
-     "Dragonne : Non",
-     "Facile à nettoyer : Oui",
-     "Pays d'origine : Corée du sud",
-     "Largeur : 190,7 mm"
-    ]
-   },
-   "desc": "Samsung EF-BX840PBEGWW, Housse, Samsung, Galaxy Tab S12 Plus, 338 g",
-   "product": {
-    "ico": "⌨️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-BX840PBEGWW étui pour tablette Housse Gris",
-     "en": "Samsung EF-BX840PBEGWW étui pour tablette Housse Gris"
-    },
-    "cat": "smart",
-    "tags": [
-     "Samsung",
-     "acc-tablet"
-    ],
-    "ref": 0
-   }
-  },
-  "icb33c8b4b": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Galaxy Tab S12 Plus",
-   "label": "Samsung EF-BX840PWEGWW étui pour tablette Housse Blanc (EF-BX840PWEGWW)",
-   "brand": "Samsung",
-   "mpn": "EF-BX840PWEGWW",
-   "rayon": "acc-tablet",
-   "photo": "https://images.icecat.biz/img/gallery/a37beafd5e8d193c52a0dd82677597f1c069d2bc.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 338 g",
-     "Compatibilité : Galaxy Tab S12 Plus",
-     "Nombre de positions debout : 2",
-     "Type d'étui : Housse",
-     "Compatibilité de marque : Samsung",
-     "Position debout : Oui",
-     "Fonctions de protection : Résistant aux rayures, Résistant aux impacts",
-     "Largeur : 190,7 mm",
-     "Profondeur : 10,8 mm",
-     "Hauteur : 291,1 mm",
-     "Quantité : 1 pièce(s)",
-     "Type d'emballage : Boîte avec crochet"
-    ]
-   },
-   "desc": "Samsung EF-BX840PWEGWW, Housse, Samsung, Galaxy Tab S12 Plus, 338 g",
-   "product": {
-    "ico": "⌨️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-BX840PWEGWW étui pour tablette Housse Blanc",
-     "en": "Samsung EF-BX840PWEGWW étui pour tablette Housse Blanc"
-    },
-    "cat": "smart",
-    "tags": [
-     "Samsung",
-     "acc-tablet"
-    ],
-    "ref": 0
-   }
-  },
-  "icd985dc09": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Samsung",
-   "label": "Samsung EF-DX845B Espagnole Pogo Pin Gris (EF-DX845BJEGES)",
-   "brand": "Samsung",
-   "mpn": "EF-DX845BJEGES",
-   "rayon": "acc-pc",
-   "photo": "https://images.icecat.biz/img/gallery/9efa0d37c723f8dcc38f27f59ceb084f057d5488.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 610 g",
-     "Language du clavier : Espagnole",
-     "Nombre de touches du clavier : 81",
-     "Dispositif de pointage : Pavé tactile",
-     "Pavé numérique : Non",
-     "Compatibilité de marque : Samsung",
-     "Compatibilité : Galaxy Tab S12+",
-     "Couverture : Oui",
-     "Rétroéclairage : Non",
-     "Technologie de connectivité : Station d'accueil",
-     "Interface de l'appareil : Pogo Pin",
-     "Source d'alimentation : Station d'accueil"
-    ]
-   },
-   "desc": "Samsung EF-DX845B, Espagnole, Pavé tactile, Samsung, Galaxy Tab S12+, Gris, Station d'accueil",
-   "product": {
-    "ico": "🖱️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX845B Espagnole Pogo Pin Gris",
-     "en": "Samsung EF-DX845B Espagnole Pogo Pin Gris"
-    },
-    "cat": "eng",
-    "tags": [
-     "Samsung",
-     "acc-pc"
-    ],
-    "ref": 0
-   }
-  },
-  "icd9291a49": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Samsung",
-   "label": "Samsung EF-DX840B Espagnole Pogo Pin Noir (EF-DX840BBEGES)",
-   "brand": "Samsung",
-   "mpn": "EF-DX840BBEGES",
-   "rayon": "acc-pc",
-   "photo": "https://images.icecat.biz/img/gallery/4ff8f3aab0ab7ccc9e7cb44dfbf6dae8948c7a11.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 364,4 g",
-     "Language du clavier : Espagnole",
-     "Nombre de touches du clavier : 80",
-     "Dispositif de pointage : Non",
-     "Pavé numérique : Non",
-     "Compatibilité de marque : Samsung",
-     "Compatibilité : Galaxy Tab S12+",
-     "Couverture : Oui",
-     "Rétroéclairage : Non",
-     "Technologie de connectivité : Station d'accueil",
-     "Interface de l'appareil : Pogo Pin",
-     "Source d'alimentation : Station d'accueil"
-    ]
-   },
-   "desc": "Samsung EF-DX840B, Espagnole, Samsung, Galaxy Tab S12+, Noir, Station d'accueil, Pogo Pin",
-   "product": {
-    "ico": "🖱️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX840B Espagnole Pogo Pin Noir",
-     "en": "Samsung EF-DX840B Espagnole Pogo Pin Noir"
-    },
-    "cat": "eng",
-    "tags": [
-     "Samsung",
-     "acc-pc"
-    ],
-    "ref": 0
-   }
-  },
-  "ic99c1c3ae": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Samsung",
-   "label": "Samsung EF-DX845B Espagnole Pogo Pin Argent (EF-DX845BSEGES)",
-   "brand": "Samsung",
-   "mpn": "EF-DX845BSEGES",
-   "rayon": "acc-pc",
-   "photo": "https://images.icecat.biz/img/gallery/03ab0b2fd99e09deb9b475f884ba62bdefe07c09.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 610 g",
-     "Language du clavier : Espagnole",
-     "Nombre de touches du clavier : 81",
-     "Dispositif de pointage : Pavé tactile",
-     "Pavé numérique : Non",
-     "Compatibilité de marque : Samsung",
-     "Compatibilité : Galaxy Tab S12+",
-     "Couverture : Oui",
-     "Rétroéclairage : Non",
-     "Technologie de connectivité : Station d'accueil",
-     "Interface de l'appareil : Pogo Pin",
-     "Source d'alimentation : Station d'accueil"
-    ]
-   },
-   "desc": "Samsung EF-DX845B, Espagnole, Pavé tactile, Samsung, Galaxy Tab S12+, Argent, Station d'accueil",
-   "product": {
-    "ico": "🖱️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX845B Espagnole Pogo Pin Argent",
-     "en": "Samsung EF-DX845B Espagnole Pogo Pin Argent"
-    },
-    "cat": "eng",
-    "tags": [
-     "Samsung",
-     "acc-pc"
-    ],
-    "ref": 0
-   }
-  },
   "icb5a212f9": {
    "kind": "device",
    "secondary": true,
@@ -432,7 +49,7 @@
    "kind": "device",
    "secondary": true,
    "sold": "main",
-   "compat": "Galaxy Buds Core, Galaxy Buds4 Pro, Galaxy Buds3 Pro, Galaxy Buds2 Pro, Galaxy Buds Pro, Galaxy Buds Live, Galaxy Buds+,",
+   "compat": "",
    "label": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\") (SM-X940NZSTEUB)",
    "brand": "Samsung",
    "mpn": "SM-X940NZSTEUB",
@@ -740,7 +357,7 @@
    "kind": "device",
    "secondary": true,
    "sold": "main",
-   "compat": "Non",
+   "compat": "",
    "label": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc (SP-LFF3HLAXXZA)",
    "brand": "Samsung",
    "mpn": "SP-LFF3HLAXXZA",
@@ -780,398 +397,90 @@
     "ref": 0
    }
   },
-  "ica3f07638": {
-   "kind": "device",
-   "secondary": true,
-   "sold": "main",
-   "compat": "",
-   "label": "ASUS ROG G700 GM700TZ-R8700F150W PC AMD Ryzen™ 7 8700F 32 Go DDR5-SDRAM 1 To SSD NVIDIA GeForce RTX 5070 Windows 11 Home (GM700TZ-R8700F150W)",
-   "brand": "ASUS",
-   "mpn": "GM700TZ-R8700F150W",
-   "rayon": "pc",
-   "photo": "https://images.icecat.biz/img/gallery/80948deff0c6fefd1a14eb3cfa88e27af0cdb204.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Modèle de processeur : 8700F",
-     "Mémoire interne : 32 Go",
-     "Mémoire interne maximale : 64 Go",
-     "Type de mémoire interne : DDR5-SDRAM",
-     "Capacité totale de stockage : 1 To",
-     "Supports de stockage : SSD",
-     "Adaptateur de carte graphique distinct : Oui",
-     "Fabricant de carte graphique discrète : AMD",
-     "Carte graphique intégrée : Non",
-     "Mémoire carte graphique distincte : 12 Go",
-     "Type de carte graphique : GDDR7",
-     "Quantité de ports HDMI de la carte graphique : 1"
-    ]
-   },
-   "desc": "ASUS ROG G700 GM700TZ-R8700F150W, 4,1 GHz, AMD Ryzen™ 7, 8700F, 32 Go, 1 To, Windows 11 Home",
-   "product": {
-    "ico": "💻",
-    "brand": "ASUS",
-    "n": {
-     "fr": "ASUS ROG G700 GM700TZ-R8700F150W PC AMD Ryzen™ 7 8700F 32 Go DDR5-SDRAM 1 To SSD NVIDIA GeForce RTX ",
-     "en": "ASUS ROG G700 GM700TZ-R8700F150W PC AMD Ryzen™ 7 8700F 32 Go DDR5-SDRAM 1 To SSD NVIDIA GeForce RTX "
-    },
-    "cat": "eng",
-    "tags": [
-     "ASUS",
-     "pc"
-    ],
-    "ref": 0
-   }
-  },
-  "iced8747bb": {
-   "kind": "device",
-   "secondary": true,
-   "sold": "main",
-   "compat": "",
-   "label": "Samsung Galaxy Tab S12 Ultra 5G (14,6\") (SM-X946BZSTEUB)",
+  "ic72d79fbd": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Galaxy S26 FE",
+   "label": "Samsung EF-ES741CPEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Rose (EF-ES741CPEGCA)",
    "brand": "Samsung",
-   "mpn": "SM-X946BZSTEUB",
-   "rayon": "tablet",
-   "photo": "https://images.icecat.biz/img/gallery/e7586e040971036ee7331f2e7c21a9d2af4055a2.jpg",
+   "mpn": "EF-ES741CPEGCA",
+   "rayon": "acc-phone",
+   "photo": "https://images.icecat.biz/img/gallery/9a1e60384176ae01a3dbe713d692bda06df9794e.jpg",
    "photoSrc": "Icecat",
    "factsSrc": "https://icecat.biz",
    "facts": {
     "fr": [
-     "Taille de l'écran : 37,1 cm (14.6\")",
-     "Résolution de l'écran : 2960 x 1848 pixels",
-     "Mémoire interne : 16 Go",
-     "Capacité de stockage interne : 1 To",
-     "Résolution de la caméra arrière (numerique) : 13 MP",
-     "Résolution de la seconde caméra arrière (numérique) : 8 MP",
-     "Résolution vidéo maximale : 3840 x 2160 pixels",
-     "Résolution de la caméra avant (numerique) : 12 MP",
-     "Bluetooth : Oui",
-     "Norme Wi-Fi : Wi-Fi 7 (802.11be)",
-     "Wi-Fi Direct : Oui",
-     "Plateforme : Android"
+     "Taille maximale de l’écran : 17 cm (6.7\")",
+     "Coloration de surface : Monochromatique",
+     "Compatibilité : Galaxy S26 FE",
+     "Type d'étui : Housse",
+     "Matériel : Silicone",
+     "Recharge sans fil : Oui",
+     "Compatible MagSafe : Oui",
+     "Compatibilité de marque : Samsung",
+     "Support de bureau : Non",
+     "Type de fermeture : Non applicable",
+     "Pochette de carte : Non",
+     "Résistant aux traces de doigts : Oui"
     ]
    },
-   "desc": "Fine et légère, prête à vous suivre partout. La Galaxy Tab S12 Ultra allie un design premium épuré et un grand écran à la magie du S Pen, pour un usage idéal aussi bien pour étudier que pour la productivité au travail, où que vous emmène votre journée. Conçue dans un format fin et léger, votre Galaxy Tab se glisse partout pour vous accompagner sans effort au studio, au bureau ou lors de votre prochain voyage. Son grand écran de 14,6 pouces la transforme en véritable atelier créatif. Le S Pen inclus, apporte une précision naturelle pour donner vie à vos créations. Une charge, 23 heures d'autono",
+   "desc": "Samsung EF-ES741CPEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Rose",
    "product": {
-    "ico": "📲",
+    "ico": "🔌",
     "brand": "Samsung",
     "n": {
-     "fr": "Samsung Galaxy Tab S12 Ultra 5G (14,6\")",
-     "en": "Samsung Galaxy Tab S12 Ultra 5G (14,6\")"
+     "fr": "Samsung EF-ES741CPEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Rose",
+     "en": "Samsung EF-ES741CPEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Rose"
     },
     "cat": "smart",
     "tags": [
      "Samsung",
-     "tablet"
+     "acc-phone"
     ],
     "ref": 0
    }
   },
-  "ic41cb9891": {
-   "kind": "device",
-   "secondary": true,
-   "sold": "main",
-   "compat": "",
-   "label": "Dreame D40 Ultra Blanc (DI2889)",
-   "brand": "Dreame",
-   "mpn": "DI2889",
-   "rayon": "home-appliance",
-   "photo": "https://images.icecat.biz/img/gallery/2c758304fc61e79e55c4e99a9f610154dce919e6.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Wifi : Oui",
-     "Type de navigation : Laser Distance Sensor (LDS)",
-     "Technologie batterie : Lithium-Ion (Li-Ion)",
-     "Capacité de la batterie : 6400 mAh",
-     "Poids : 14,9 kg",
-     "Poids du paquet : 20,1 kg",
-     "Puissance d'aspiration : 12000 Pascal",
-     "Type de conteneur à poussière : Sans sac",
-     "Forme : Rond",
-     "Type de bac à poussière (base) : Sac à poussière",
-     "Lavage humide : Oui",
-     "Contenance en poussière (base) : 3,2 L"
-    ]
-   },
-   "desc": "Dreame D40 Ultra, Sans sac, Blanc, Rond, Sac à poussière, Chargement, Purification, 76 dB",
-   "product": {
-    "ico": "🧹",
-    "brand": "Dreame",
-    "n": {
-     "fr": "Dreame D40 Ultra Blanc",
-     "en": "Dreame D40 Ultra Blanc"
-    },
-    "cat": "smart",
-    "tags": [
-     "Dreame",
-     "home-appliance"
-    ],
-    "ref": 0
-   }
-  },
-  "ic3b544da2": {
-   "kind": "device",
+  "ic557a4c04": {
+   "kind": "accessory",
    "secondary": false,
-   "sold": "main",
-   "compat": "",
-   "label": "Samsung Galaxy Watch9 3,3 cm (1.3\") AMOLED 40 mm Numérique 438 x 438 pixels Écran tactile Graphite Wifi GPS (satellite) (SM-L340NZKAXSA)",
+   "sold": "separate",
+   "compat": "Galaxy S26 FE",
+   "label": "Samsung EF-SS741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Bleu, Violet (EF-SS741CLEGCA)",
    "brand": "Samsung",
-   "mpn": "SM-L340NZKAXSA",
-   "rayon": "watch",
-   "photo": "https://images.icecat.biz/img/gallery/42dd66ac1fd736bf2e1f405e29dc26d46b845141.jpg",
+   "mpn": "EF-SS741CLEGCA",
+   "rayon": "acc-phone",
+   "photo": "https://images.icecat.biz/img/gallery/94083cbf312dabfda26f68524e19a51ed8d9d7f1.jpg",
    "photoSrc": "Icecat",
    "factsSrc": "https://icecat.biz",
    "facts": {
     "fr": [
-     "Taille de l'écran : 3,3 cm (1.3\")",
-     "Résolution de l'écran : 438 x 438 pixels",
-     "Capacité de la RAM : 2000 Mo",
-     "Standards wifi : 802.11a, 802.11b, 802.11g, Wi-Fi 4 (802.11n)",
-     "Bluetooth : Oui",
-     "Profils Bluetooth : A2DP, AVRCP, HFP, HSP",
-     "Wifi : Oui",
-     "Modèle du Bluetooth : 6.0",
-     "Type de batterie : Batterie intégré",
-     "Autonomie maximum de la batterie : 40 h",
-     "Capacité de la batterie : 390 mAh",
-     "Poids : 31,5 g"
+     "Taille maximale de l’écran : 17 cm (6.7\")",
+     "Coloration de surface : Monochromatique",
+     "Compatibilité : Galaxy S26 FE",
+     "Type d'étui : Housse",
+     "Recharge sans fil : Oui",
+     "Compatible MagSafe : Oui",
+     "Compatibilité de marque : Samsung",
+     "Support de bureau : Non",
+     "Type de fermeture : Non applicable",
+     "Pochette de carte : Non",
+     "Résistant aux traces de doigts : Oui",
+     "Protection anti-jaunissement : Oui"
     ]
    },
-   "desc": "Samsung Galaxy Watch9 , 3,3 cm (1.3\"), AMOLED, Écran tactile, 32 Go, GPS (satellite), 31,5 g",
+   "desc": "Samsung EF-SS741CLEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Bleu, Violet",
    "product": {
-    "ico": "⌚",
+    "ico": "🔌",
     "brand": "Samsung",
     "n": {
-     "fr": "Samsung Galaxy Watch9 3,3 cm (1.3\") AMOLED 40 mm Numérique 438 x 438 pixels Écran tactile Graphite W",
-     "en": "Samsung Galaxy Watch9 3,3 cm (1.3\") AMOLED 40 mm Numérique 438 x 438 pixels Écran tactile Graphite W"
+     "fr": "Samsung EF-SS741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Bleu, Viole",
+     "en": "Samsung EF-SS741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Bleu, Viole"
     },
     "cat": "smart",
     "tags": [
      "Samsung",
-     "watch"
-    ],
-    "ref": 0
-   }
-  },
-  "icabee0222": {
-   "kind": "device",
-   "secondary": false,
-   "sold": "main",
-   "compat": "",
-   "label": "Lenovo YOGA PC Edition Casque Avec fil &sans fil Arceau Appels/Musique USB Type-C Bluetooth Bleu (GXD1U36672)",
-   "brand": "Lenovo",
-   "mpn": "GXD1U36672",
-   "rayon": "audio",
-   "photo": "https://images.icecat.biz/img/gallery/5b7ed10f0a2dd84872db0cb433ea3e660681b98d.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Bluetooth : Oui",
-     "Modèle du Bluetooth : 5.3",
-     "Portée du routeur sans fil : 30 m",
-     "Capacité de la batterie : 640 mAh",
-     "Poids : 270 g",
-     "Poids du paquet : 1,02 kg",
-     "Style de casque portable : Arceau",
-     "Utilisation recommandée : Appels/Musique",
-     "Type de casque : Binaural",
-     "Nom de la couleur : Cosmic Blue",
-     "Type de commande : Boutons, Tactile, Glissière",
-     "Certification : CB, BQB, CE, UKCA, RCM, EAC, FCC, ICES, WPC, SRRC, IMDA, JRF"
-    ]
-   },
-   "desc": "Lenovo YOGA PC Edition, Avec fil &sans fil, 20 - 20000 Hz, Appels/Musique, 270 g, Casque, Bleu",
-   "product": {
-    "ico": "🎧",
-    "brand": "Lenovo",
-    "n": {
-     "fr": "Lenovo YOGA PC Edition Casque Avec fil &sans fil Arceau Appels/Musique USB Type-C Bluetooth Bleu",
-     "en": "Lenovo YOGA PC Edition Casque Avec fil &sans fil Arceau Appels/Musique USB Type-C Bluetooth Bleu"
-    },
-    "cat": "smart",
-    "tags": [
-     "Lenovo",
-     "audio"
-    ],
-    "ref": 0
-   }
-  },
-  "ic6f7fb12b": {
-   "kind": "device",
-   "secondary": true,
-   "sold": "main",
-   "compat": "",
-   "label": "Nintendo Switch Lite & Tomodachi Life : Une vie de rêve (10020218)",
-   "brand": "Nintendo",
-   "mpn": "10020218",
-   "rayon": "console",
-   "photo": "https://images.icecat.biz/img/gallery/817c2f10c0202009febf4e0a69d39d717df12b8e.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Plateforme : Nintendo Switch Lite",
-     "Modèle de processeur : NVIDIA Custom Tegra",
-     "Taille de l'écran : 14 cm (5.5\")",
-     "Résolution de l'écran : 1280 x 720 pixels",
-     "Wifi : Oui",
-     "Bluetooth : Oui",
-     "Standards wifi : 802.11a, 802.11b, 802.11g, Wi-Fi 4 (802.11n), Wi-Fi 5 (802.11ac)",
-     "Modèle du Bluetooth : 4.1",
-     "Autonomie maximum de la batterie : 7 h",
-     "Puissance de charge requise (min) : 2,5 W",
-     "Puissance de charge requise (max) : 9 W",
-     "Poids : 275 g"
-    ]
-   },
-   "desc": "Ce pack de console comprend une console Nintendo Switch Lite (turquoise) et le jeu Tomodachi Life: Une vie de rêve (téléchargement requis). Dédiée au jeu portable ! La Nintendo Switch Lite est une nouvelle venue compacte et légère dans la gamme Nintendo Switch, avec commandes intégrées. La Nintendo Switch Lite est compatible avec tous les logiciels Nintendo Switch utilisables en mode portable. C'est la console parfaite pour tous les utilisateurs qui jouent fréquemment à l'extérieur, et pour tous les joueurs qui souhaitent jouer en ligne ou en multijoueur local sans fil en famille ou avec leurs",
-   "product": {
-    "ico": "🎮",
-    "brand": "Nintendo",
-    "n": {
-     "fr": "Nintendo Switch Lite & Tomodachi Life : Une vie de rêve",
-     "en": "Nintendo Switch Lite & Tomodachi Life : Une vie de rêve"
-    },
-    "cat": "smart",
-    "tags": [
-     "Nintendo",
-     "console"
-    ],
-    "ref": 0
-   }
-  },
-  "icbb815600": {
-   "kind": "device",
-   "secondary": false,
-   "sold": "main",
-   "compat": "",
-   "label": "ASUS ProArt OLED PA329CDV écran plat de PC 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED Noir, Argent (90LM02C0-B01K71)",
-   "brand": "ASUS",
-   "mpn": "90LM02C0-B01K71",
-   "rayon": "office",
-   "photo": "https://images.icecat.biz/img/gallery/2af19439f06d317a0e9ceee7a907e0cd31fee394.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Taille de l'écran : 80 cm (31.5\")",
-     "Résolution de l'écran : 3840 x 2160 pixels",
-     "Puissance évaluée de RMS : 4 W",
-     "Capacité de puissance USB : Oui",
-     "Délivrance de la puissance USB jusqu’à : 96 W",
-     "HDMI : Oui",
-     "Quantité de ports HDMI : 1",
-     "Version HDMI : 2.1",
-     "Poids (avec support) : 7,05 kg",
-     "Poids (sans support) : 4,47 kg",
-     "Poids du paquet : 11,2 kg",
-     "Type HD : 4K Ultra HD"
-    ]
-   },
-   "desc": "ASUS ProArt OLED PA329CDV, 80 cm (31.5\"), 3840 x 2160 pixels, 4K Ultra HD, QD-OLED, 0,1 ms, Noir, Argent",
-   "product": {
-    "ico": "🖥️",
-    "brand": "ASUS",
-    "n": {
-     "fr": "ASUS ProArt OLED PA329CDV écran plat de PC 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED Noir",
-     "en": "ASUS ProArt OLED PA329CDV écran plat de PC 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED Noir"
-    },
-    "cat": "eng",
-    "tags": [
-     "ASUS",
-     "office"
-    ],
-    "ref": 0
-   }
-  },
-  "ic36477938": {
-   "kind": "device",
-   "secondary": false,
-   "sold": "main",
-   "compat": "",
-   "label": "Lenovo Huddly Crew 20 MP Noir 1920 x 1080 pixels 30 ips (40CNAAABWW)",
-   "brand": "Lenovo",
-   "mpn": "40CNAAABWW",
-   "rayon": "gadget-home",
-   "photo": "https://images.icecat.biz/img/gallery/242b49845655f7e4a5e6bc82de4111e4c571864a.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Résolution vidéo maximale : 1920 x 1080 pixels",
-     "Poids : 600 g",
-     "Poids du paquet : 1,2 kg",
-     "Type d'appareil photo : Caméra unique",
-     "Mégapixel : 20 MP",
-     "point de vue angle (FOV) : 103°",
-     "point de vue horizontale : 92°",
-     "point de vue verticale : 65°",
-     "Type HD : Full HD",
-     "Cadence maximale : 30 ips",
-     "Modes vidéo pris en charge : 1080p, 720p",
-     "Format vidéo pris en charge : M-JPEG"
-    ]
-   },
-   "desc": "Lenovo Huddly Crew, 20 MP, Full HD, 1920 x 1080 pixels, 30 ips, 103°, Noir",
-   "product": {
-    "ico": "🏠",
-    "brand": "Lenovo",
-    "n": {
-     "fr": "Lenovo Huddly Crew 20 MP Noir 1920 x 1080 pixels 30 ips",
-     "en": "Lenovo Huddly Crew 20 MP Noir 1920 x 1080 pixels 30 ips"
-    },
-    "cat": "future",
-    "tags": [
-     "Lenovo",
-     "gadget-home"
-    ],
-    "ref": 0
-   }
-  },
-  "ic8a2b6dfe": {
-   "kind": "device",
-   "secondary": true,
-   "sold": "main",
-   "compat": "",
-   "label": "Samsung SP-LSP3BLA Projecteur à focale ultra courte 550 ANSI lumens DLP 1080p (1920x1080) Noir, Blanc (SP-LSP3BLAXZC)",
-   "brand": "Samsung",
-   "mpn": "SP-LSP3BLAXZC",
-   "rayon": "gadget-culture",
-   "photo": "https://images.icecat.biz/img/gallery/29a8d06df618bdf974b41cb8b942f43d2726d50d.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Résolution native du projecteur : 1080p (1920x1080)",
-     "Type de connecteur HDMI : Micro",
-     "Version HDMI : 1.4",
-     "Quantité de ports HDMI : 1",
-     "Wifi : Oui",
-     "Standards wifi : Wi-Fi 5 (802.11ac)",
-     "Bluetooth : Oui",
-     "Modèle du Bluetooth : 5.2",
-     "Bluetooth Low Energy (BLE) : Oui",
-     "Guide de programme électronique : Oui",
-     "Puissance évaluée de RMS : 5 W",
-     "Poids : 800 g"
-    ]
-   },
-   "desc": "Samsung SP-LSP3BLA, 550 ANSI lumens, DLP, 1080p (1920x1080), 100000:1, 762 - 2540 mm (30 - 100\"), Samsung Contrast Enhancer, Samsung Auto Motion Plus",
-   "product": {
-    "ico": "🔭",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung SP-LSP3BLA Projecteur à focale ultra courte 550 ANSI lumens DLP 1080p (1920x1080) Noir, Blan",
-     "en": "Samsung SP-LSP3BLA Projecteur à focale ultra courte 550 ANSI lumens DLP 1080p (1920x1080) Noir, Blan"
-    },
-    "cat": "future",
-    "tags": [
-     "Samsung",
-     "gadget-culture"
+     "acc-phone"
     ],
     "ref": 0
    }
@@ -1215,90 +524,90 @@
     "ref": 0
    }
   },
-  "ic882dfe33": {
+  "iceb4555de": {
    "kind": "accessory",
    "secondary": false,
    "sold": "separate",
-   "compat": "Galaxy S26 FE",
-   "label": "Samsung EF-CS741CTEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Transparent (EF-CS741CTEGCA)",
+   "compat": "Samsung Galaxy Tab S12+",
+   "label": "Samsung EF-DX840BBEGTR étui pour tablette 31,5 cm (12.4\") Housse Noir (EF-DX840BBEGTR)",
    "brand": "Samsung",
-   "mpn": "EF-CS741CTEGCA",
-   "rayon": "acc-phone",
-   "photo": "https://images.icecat.biz/img/gallery/687c4fddc634d23d3b8d3a1d2fbe900e84771a3b.jpg",
+   "mpn": "EF-DX840BBEGTR",
+   "rayon": "acc-tablet",
+   "photo": "https://images.icecat.biz/img/brand/high/26_0fa895b43fbb414f966b375ded38e77b.jpg",
    "photoSrc": "Icecat",
    "factsSrc": "https://icecat.biz",
    "facts": {
     "fr": [
-     "Taille maximale de l’écran : 17 cm (6.7\")",
-     "Coloration de surface : Monochromatique",
-     "Compatibilité : Galaxy S26 FE",
+     "Batterie intégrée : Non",
+     "Compatibilité : Samsung Galaxy Tab S12+",
+     "Nombre de positions debout : 1",
+     "Taille maximale de l’écran : 31,5 cm (12.4\")",
      "Type d'étui : Housse",
-     "Recharge sans fil : Oui",
+     "Matériel : Plastique",
      "Compatibilité de marque : Samsung",
-     "Support de bureau : Non",
-     "Type de fermeture : Non applicable",
-     "Pochette de carte : Non",
-     "Résistant aux traces de doigts : Oui",
-     "Protection anti-jaunissement : Oui",
-     "Facile à appliquer : Oui"
+     "Type de fermeture : Fermeture magnétique",
+     "Haut-parleurs intégrés : Non",
+     "Position debout : Oui",
+     "Poche pour cartes de visite : Non",
+     "Boucle élastique pour stylo : Oui"
     ]
    },
-   "desc": "Samsung EF-CS741CTEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Transparent",
+   "desc": "Samsung EF-DX840BBEGTR, Housse, Samsung, Samsung Galaxy Tab S12+, 31,5 cm (12.4\")",
    "product": {
-    "ico": "🔌",
+    "ico": "⌨️",
     "brand": "Samsung",
     "n": {
-     "fr": "Samsung EF-CS741CTEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Transparent",
-     "en": "Samsung EF-CS741CTEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Transparent"
+     "fr": "Samsung EF-DX840BBEGTR étui pour tablette 31,5 cm (12.4\") Housse Noir",
+     "en": "Samsung EF-DX840BBEGTR étui pour tablette 31,5 cm (12.4\") Housse Noir"
     },
     "cat": "smart",
     "tags": [
      "Samsung",
-     "acc-phone"
+     "acc-tablet"
     ],
     "ref": 0
    }
   },
-  "ic6ec815ef": {
+  "icfeecb980": {
    "kind": "accessory",
    "secondary": false,
    "sold": "separate",
-   "compat": "Galaxy S26 FE",
-   "label": "Samsung EF-ES741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Violet, Bleu (EF-ES741CLEGCA)",
+   "compat": "Galaxy Tab S12 Plus",
+   "label": "Samsung EF-BX840PBEGWW étui pour tablette Housse Gris (EF-BX840PBEGWW)",
    "brand": "Samsung",
-   "mpn": "EF-ES741CLEGCA",
-   "rayon": "acc-phone",
-   "photo": "https://images.icecat.biz/img/gallery/5d2f72e72ca90ea4fed80a2572adbe3e6d9a0654.jpg",
+   "mpn": "EF-BX840PBEGWW",
+   "rayon": "acc-tablet",
+   "photo": "https://images.icecat.biz/img/gallery/74edfbf8038d829af414f2a6291b9c295ba8c8f1.jpg",
    "photoSrc": "Icecat",
    "factsSrc": "https://icecat.biz",
    "facts": {
     "fr": [
-     "Taille maximale de l’écran : 17 cm (6.7\")",
-     "Coloration de surface : Monochromatique",
-     "Compatibilité : Galaxy S26 FE",
+     "Poids : 338 g",
+     "Compatibilité : Galaxy Tab S12 Plus",
+     "Nombre de positions debout : 2",
      "Type d'étui : Housse",
-     "Matériel : Silicone",
-     "Recharge sans fil : Oui",
-     "Compatible MagSafe : Oui",
      "Compatibilité de marque : Samsung",
-     "Support de bureau : Non",
-     "Type de fermeture : Non applicable",
-     "Pochette de carte : Non",
-     "Résistant aux traces de doigts : Oui"
+     "Position debout : Oui",
+     "Fonctions de protection : Résistant aux impacts, Résistant aux rayures",
+     "Protection d’écran intégrée : Non",
+     "Dragonne : Non",
+     "Facile à nettoyer : Oui",
+     "Pays d'origine : Corée du sud",
+     "Largeur : 190,7 mm"
     ]
    },
-   "desc": "Samsung EF-ES741CLEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Violet, Bleu",
+   "desc": "Samsung EF-BX840PBEGWW, Housse, Samsung, Galaxy Tab S12 Plus, 338 g",
    "product": {
-    "ico": "🔌",
+    "ico": "⌨️",
     "brand": "Samsung",
     "n": {
-     "fr": "Samsung EF-ES741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Violet, Ble",
-     "en": "Samsung EF-ES741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Violet, Ble"
+     "fr": "Samsung EF-BX840PBEGWW étui pour tablette Housse Gris",
+     "en": "Samsung EF-BX840PBEGWW étui pour tablette Housse Gris"
     },
     "cat": "smart",
     "tags": [
      "Samsung",
-     "acc-phone"
+     "acc-tablet"
     ],
     "ref": 0
    }
@@ -1307,7 +616,7 @@
    "kind": "accessory",
    "secondary": false,
    "sold": "separate",
-   "compat": "Samsung",
+   "compat": "Galaxy Tab S12 Plus",
    "label": "Samsung Tab S12+ Anti-Reflecting Film de protection anti-reflets 1 pièce(s) (EF-UX840CTEGWW)",
    "brand": "Samsung",
    "mpn": "EF-UX840CTEGWW",
@@ -1343,182 +652,6 @@
     "tags": [
      "Samsung",
      "acc-tablet"
-    ],
-    "ref": 0
-   }
-  },
-  "ic2aeb2241": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Yoga Tab Gen 2",
-   "label": "Lenovo ZG38C08661 étui pour tablette 28,2 cm (11.1\") Folio Bleu (ZG38C08661)",
-   "brand": "Lenovo",
-   "mpn": "ZG38C08661",
-   "rayon": "acc-tablet",
-   "photo": "https://images.icecat.biz/img/gallery/94b296f6087deb8749007c8ad6edfc1c2f8b2ee9.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Batterie intégrée : Non",
-     "Poids : 199 g",
-     "Compatibilité : Yoga Tab Gen 2",
-     "Taille maximale de l’écran : 28,2 cm (11.1\")",
-     "Type d'étui : Folio",
-     "Matériel : Polyuréthane",
-     "Compatibilité de marque : Lenovo",
-     "Haut-parleurs intégrés : Non",
-     "Position debout : Oui",
-     "Fonctions de protection : Résistance aux chutes, Résistant aux rayures",
-     "Largeur : 178 mm",
-     "Profondeur : 252 mm"
-    ]
-   },
-   "desc": "Lenovo ZG38C08661, Folio, Lenovo, Yoga Tab Gen 2, 28,2 cm (11.1\"), 199 g",
-   "product": {
-    "ico": "⌨️",
-    "brand": "Lenovo",
-    "n": {
-     "fr": "Lenovo ZG38C08661 étui pour tablette 28,2 cm (11.1\") Folio Bleu",
-     "en": "Lenovo ZG38C08661 étui pour tablette 28,2 cm (11.1\") Folio Bleu"
-    },
-    "cat": "smart",
-    "tags": [
-     "Lenovo",
-     "acc-tablet"
-    ],
-    "ref": 0
-   }
-  },
-  "ic2f1647f0": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Ordinateur portable",
-   "label": "Lenovo 4X81W51849 stylet Gris (4X81W51849)",
-   "brand": "Lenovo",
-   "mpn": "4X81W51849",
-   "rayon": "acc-tablet",
-   "photo": "https://images.icecat.biz/img/gallery/c54fd99a133dbda28d7b5a937df9f3739317b86d.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Durée de vie de la batterie : 160 h",
-     "Compatibilité des périphériques : Ordinateur portable",
-     "Compatibilité de marque : Lenovo",
-     "Compatibilité : ThinkBook 14 2-in-1 G6 IPL",
-     "Nom de la couleur : Luna Grey",
-     "Certification : CE, UKCA, FCC, UL, KC, VCCI, NOM-019, RoHS, EAC, SABS, RCM",
-     "Largeur : 152 mm",
-     "Diamètre de l’extrémité : 9,13 mm",
-     "Température d'opération : 5 - 40 °C",
-     "Humidité relative de fonctionnement (H-H) : 30 - 80%",
-     "Quantité : 1 pièce(s)",
-     "Type d'emballage : Boîte"
-    ]
-   },
-   "desc": "Lenovo 4X81W51849, Ordinateur portable, Lenovo, Gris, ThinkBook 14 2-in-1 G6 IPL, Luna Grey, Gris",
-   "product": {
-    "ico": "⌨️",
-    "brand": "Lenovo",
-    "n": {
-     "fr": "Lenovo 4X81W51849 stylet Gris",
-     "en": "Lenovo 4X81W51849 stylet Gris"
-    },
-    "cat": "smart",
-    "tags": [
-     "Lenovo",
-     "acc-tablet"
-    ],
-    "ref": 0
-   }
-  },
-  "ic622a0b5d": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Samsung",
-   "label": "Samsung EF-DX840B QWERTZ Allemand Pogo Pin Noir (EF-DX840BBEGDE)",
-   "brand": "Samsung",
-   "mpn": "EF-DX840BBEGDE",
-   "rayon": "acc-pc",
-   "photo": "https://images.icecat.biz/img/gallery/4ff8f3aab0ab7ccc9e7cb44dfbf6dae8948c7a11.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 364,4 g",
-     "Disposition des touches du clavier : QWERTZ",
-     "Language du clavier : Allemand",
-     "Nombre de touches du clavier : 80",
-     "Dispositif de pointage : Non",
-     "Pavé numérique : Non",
-     "Compatibilité de marque : Samsung",
-     "Compatibilité : Galaxy Tab S12+",
-     "Couverture : Oui",
-     "Rétroéclairage : Non",
-     "Technologie de connectivité : Station d'accueil",
-     "Interface de l'appareil : Pogo Pin"
-    ]
-   },
-   "desc": "Samsung EF-DX840B, QWERTZ, Allemand, Samsung, Galaxy Tab S12+, Noir, Station d'accueil",
-   "product": {
-    "ico": "🖱️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX840B QWERTZ Allemand Pogo Pin Noir",
-     "en": "Samsung EF-DX840B QWERTZ Allemand Pogo Pin Noir"
-    },
-    "cat": "eng",
-    "tags": [
-     "Samsung",
-     "acc-pc"
-    ],
-    "ref": 0
-   }
-  },
-  "icbf5a0538": {
-   "kind": "accessory",
-   "secondary": false,
-   "sold": "separate",
-   "compat": "Samsung",
-   "label": "Samsung EF-DX845B QWERTZ Allemand Pogo Pin Argent (EF-DX845BSEGDE)",
-   "brand": "Samsung",
-   "mpn": "EF-DX845BSEGDE",
-   "rayon": "acc-pc",
-   "photo": "https://images.icecat.biz/img/gallery/03ab0b2fd99e09deb9b475f884ba62bdefe07c09.jpg",
-   "photoSrc": "Icecat",
-   "factsSrc": "https://icecat.biz",
-   "facts": {
-    "fr": [
-     "Poids : 610 g",
-     "Disposition des touches du clavier : QWERTZ",
-     "Language du clavier : Allemand",
-     "Nombre de touches du clavier : 81",
-     "Dispositif de pointage : Pavé tactile",
-     "Pavé numérique : Non",
-     "Compatibilité de marque : Samsung",
-     "Compatibilité : Galaxy Tab S12+",
-     "Couverture : Oui",
-     "Rétroéclairage : Non",
-     "Technologie de connectivité : Station d'accueil",
-     "Interface de l'appareil : Pogo Pin"
-    ]
-   },
-   "desc": "Samsung EF-DX845B, QWERTZ, Allemand, Pavé tactile, Samsung, Galaxy Tab S12+, Argent",
-   "product": {
-    "ico": "🖱️",
-    "brand": "Samsung",
-    "n": {
-     "fr": "Samsung EF-DX845B QWERTZ Allemand Pogo Pin Argent",
-     "en": "Samsung EF-DX845B QWERTZ Allemand Pogo Pin Argent"
-    },
-    "cat": "eng",
-    "tags": [
-     "Samsung",
-     "acc-pc"
     ],
     "ref": 0
    }
@@ -1562,6 +695,94 @@
     "cat": "eng",
     "tags": [
      "Lenovo",
+     "acc-pc"
+    ],
+    "ref": 0
+   }
+  },
+  "ic4c00713d": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "",
+   "label": "Lenovo Backpack B10 40,6 cm (16\") Sac à dos Vert (GX41V79689)",
+   "brand": "Lenovo",
+   "mpn": "GX41V79689",
+   "rayon": "acc-pc",
+   "photo": "https://images.icecat.biz/img/gallery/c15049ed8e0ac294f33ebded17542e9973e8ae7c.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Poids : 660 g",
+     "Poids du paquet : 750 g",
+     "Coloration de surface : Monochromatique",
+     "Taille maximale de l’écran : 40,6 cm (16\")",
+     "Type d'étui : Sac à dos",
+     "Matériel : Polyester",
+     "Compatibilité de marque : Toutes marques",
+     "Poche avant : Oui",
+     "Poches extérieures : Poche frontale, Poche latérale",
+     "Sangle épaule : Oui",
+     "Fonctions de protection : Résistant à l’eau, Résistant aux intempéries",
+     "Quantité : 1"
+    ]
+   },
+   "desc": "Lenovo Backpack B10, Sac à dos, 40,6 cm (16\"), Sangle épaule, 660 g",
+   "product": {
+    "ico": "🖱️",
+    "brand": "Lenovo",
+    "n": {
+     "fr": "Lenovo Backpack B10 40,6 cm (16\") Sac à dos Vert",
+     "en": "Lenovo Backpack B10 40,6 cm (16\") Sac à dos Vert"
+    },
+    "cat": "eng",
+    "tags": [
+     "Lenovo",
+     "acc-pc"
+    ],
+    "ref": 0
+   }
+  },
+  "icd8a8e5f2": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "",
+   "label": "ASUS Marshmallow Keyboard KW100 clavier Maison Bluetooth QWERTY Rose (90XB0880-BKB4K0)",
+   "brand": "ASUS",
+   "mpn": "90XB0880-BKB4K0",
+   "rayon": "acc-pc",
+   "photo": "https://images.icecat.biz/img/gallery/eb0a7f46be8e941c6f77cde5b24dddc99dc94df4.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Portée du routeur sans fil : 10 m",
+     "Type de batterie clavier : AAA",
+     "Durée de vie de la batterie : 24 mois",
+     "Technologie batterie : Alcaline",
+     "Poids du clavier : 374,8 g",
+     "Utilisation recommandée : Maison",
+     "Technologie de connectivité : Sans fil",
+     "Interface de l'appareil : Bluetooth",
+     "Interrupteur à clé de clavier : Commutateur de touche « ciseaux »",
+     "Disposition des touches du clavier : QWERTY",
+     "Dispositif de pointage : Non",
+     "Facteur de forme du clavier : 75%"
+    ]
+   },
+   "desc": "ASUS Marshmallow Keyboard KW100, 75%, Sans fil, Bluetooth, Commutateur de touche « ciseaux », QWERTY, Rose",
+   "product": {
+    "ico": "🖱️",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS Marshmallow Keyboard KW100 clavier Maison Bluetooth QWERTY Rose",
+     "en": "ASUS Marshmallow Keyboard KW100 clavier Maison Bluetooth QWERTY Rose"
+    },
+    "cat": "eng",
+    "tags": [
+     "ASUS",
      "acc-pc"
     ],
     "ref": 0
