@@ -1,0 +1,405 @@
+{
+ "updated": "2026-10-07",
+ "items": {
+  "icb5a212f9": {
+   "label": "ASUS ROG G700 GM700TZ-R9800X204W AMD Ryzen™ 7 9800X3D 32 Go DDR5-SDRAM 2 To SSD AMD Radeon RX 9070 XT Windows 11 Home To (90PF05T1-M01250)",
+   "brand": "ASUS",
+   "mpn": "90PF05T1-M01250",
+   "rayon": "pc",
+   "photo": "https://images.icecat.biz/img/gallery/ce575b740373ce2a3ebf96228596b9c76a614271.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Modèle de processeur : 9800X3D",
+     "Mémoire interne : 32 Go",
+     "Mémoire interne maximale : 64 Go",
+     "Type de mémoire interne : DDR5-SDRAM",
+     "Capacité totale de stockage : 2 To",
+     "Supports de stockage : SSD",
+     "Adaptateur de carte graphique distinct : Oui",
+     "Fabricant de carte graphique discrète : AMD",
+     "Carte graphique intégrée : Oui",
+     "Mémoire carte graphique distincte : 16 Go",
+     "Type de carte graphique : GDDR6",
+     "Quantité de ports HDMI de la carte graphique : 1"
+    ]
+   },
+   "desc": "ASUS ROG G700 GM700TZ-R9800X204W, 4,7 GHz, AMD Ryzen™ 7, 9800X3D, 32 Go, 2 To, Windows 11 Home",
+   "product": {
+    "ico": "💻",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS ROG G700 GM700TZ-R9800X204W AMD Ryzen™ 7 9800X3D 32 Go DDR5-SDRAM 2 To SSD AMD Radeon RX 9070 X",
+     "en": "ASUS ROG G700 GM700TZ-R9800X204W AMD Ryzen™ 7 9800X3D 32 Go DDR5-SDRAM 2 To SSD AMD Radeon RX 9070 X"
+    },
+    "cat": "eng",
+    "tags": [
+     "ASUS",
+     "pc"
+    ],
+    "ref": 0
+   }
+  },
+  "ic69f4abb6": {
+   "label": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\") (SM-X940NZSTEUB)",
+   "brand": "Samsung",
+   "mpn": "SM-X940NZSTEUB",
+   "rayon": "tablet",
+   "photo": "https://images.icecat.biz/img/gallery/e7586e040971036ee7331f2e7c21a9d2af4055a2.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille de l'écran : 37,1 cm (14.6\")",
+     "Résolution de l'écran : 2960 x 1848 pixels",
+     "Mémoire interne : 16 Go",
+     "Capacité de stockage interne : 1 To",
+     "Résolution de la caméra arrière (numerique) : 13 MP",
+     "Résolution de la seconde caméra arrière (numérique) : 8 MP",
+     "Résolution vidéo maximale : 3840 x 2160 pixels",
+     "Résolution de la caméra avant (numerique) : 12 MP",
+     "Bluetooth : Oui",
+     "Norme Wi-Fi : Wi-Fi 7 (802.11be)",
+     "Wi-Fi Direct : Oui",
+     "Plateforme : Android"
+    ]
+   },
+   "desc": "Fine et légère, prête à vous suivre partout. La Galaxy Tab S12 Ultra allie un design premium épuré et un grand écran à la magie du S Pen, pour un usage idéal aussi bien pour étudier que pour la productivité au travail, où que vous emmène votre journée. Conçue dans un format fin et léger, votre Galaxy Tab se glisse partout pour vous accompagner sans effort au studio, au bureau ou lors de votre prochain voyage. Son grand écran de 14,6 pouces la transforme en véritable atelier créatif. Le S Pen inclus, apporte une précision naturelle pour donner vie à vos créations. Une charge, 23 heures d'autono",
+   "product": {
+    "ico": "📲",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\")",
+     "en": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\")"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "tablet"
+    ],
+    "ref": 0
+   }
+  },
+  "iccdf255ed": {
+   "label": "Dreame T16 Pro Heat Aspirateur traineau Batterie Sec&humide Sans sac 420 W Gris 5 Ah (HHR58A)",
+   "brand": "Dreame",
+   "mpn": "HHR58A",
+   "rayon": "home-appliance",
+   "photo": "https://images.icecat.biz/img/gallery/154545fc7854611b0d1e26767cb285aa93c90609.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Technologie d'aspiration : Filtrage",
+     "Puissance d'alimentation max. : 420 W",
+     "Puissance d'aspiration : 30000 Pascal",
+     "Nombre de batteries prises en charge : 6",
+     "Batterie amovible : Oui",
+     "Capacité de la batterie : 5 Ah",
+     "Poids : 6,2 kg",
+     "Brosses d'aspiration fournies : Brosse à rouleau humide motorisée",
+     "Type de conteneur à poussière : Sans sac",
+     "Clean Capacité du réservoir d'eau : 0,9 L",
+     "Capacité du réservoir d'eau sale : 0,5 L",
+     "Type de nettoyage : Sec&humide"
+    ]
+   },
+   "desc": "Dreame T16 Pro Heat, Aspirateur traineau, Sans sac, Gris, 0,9 L, 0,5 L, Sec&humide",
+   "product": {
+    "ico": "🧹",
+    "brand": "Dreame",
+    "n": {
+     "fr": "Dreame T16 Pro Heat Aspirateur traineau Batterie Sec&humide Sans sac 420 W Gris 5 Ah",
+     "en": "Dreame T16 Pro Heat Aspirateur traineau Batterie Sec&humide Sans sac 420 W Gris 5 Ah"
+    },
+    "cat": "smart",
+    "tags": [
+     "Dreame",
+     "home-appliance"
+    ],
+    "ref": 0
+   }
+  },
+  "ic613dbba8": {
+   "label": "Samsung Galaxy Watch6 Classic 3,81 cm (1.5\") AMOLED 47 mm Numérique 480 x 480 pixels Écran tactile Noir Wifi GPS (satell (81000000601)",
+   "brand": "Samsung",
+   "mpn": "81000000601",
+   "rayon": "watch",
+   "photo": "https://images.icecat.biz/img/gallery/598c55cf88f7cd89db74a3d768dde06d98341dcb.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille de l'écran : 3,81 cm (1.5\")",
+     "Résolution de l'écran : 480 x 480 pixels",
+     "Capacité de la RAM : 2000 Mo",
+     "Standards wifi : 802.11a, 802.11b, 802.11g, Wi-Fi 4 (802.11n)",
+     "Bluetooth : Oui",
+     "Profils Bluetooth : A2DP, AVRCP, HFP, HSP",
+     "Wifi : Oui",
+     "Modèle du Bluetooth : 5.3",
+     "Type de batterie : Batterie intégré",
+     "Capacité de la batterie : 425 mAh",
+     "Poids : 59 g",
+     "Technologie d'affichage : AMOLED"
+    ]
+   },
+   "desc": "Samsung Galaxy Watch6 Classic , 3,81 cm (1.5\"), AMOLED, Écran tactile, 16 Go, GPS (satellite), 59 g",
+   "product": {
+    "ico": "⌚",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Galaxy Watch6 Classic 3,81 cm (1.5\") AMOLED 47 mm Numérique 480 x 480 pixels Écran tactile N",
+     "en": "Samsung Galaxy Watch6 Classic 3,81 cm (1.5\") AMOLED 47 mm Numérique 480 x 480 pixels Écran tactile N"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "watch"
+    ],
+    "ref": 0
+   }
+  },
+  "ic7a0054ef": {
+   "label": "ASUS S701 ROG GJALLAR/CA Noir 2.1.2 canaux (90YH0460-BAAA00)",
+   "brand": "ASUS",
+   "mpn": "90YH0460-BAAA00",
+   "rayon": "audio",
+   "photo": "https://images.icecat.biz/img/gallery/cf3d580cbc0437fc6c632c1a407085bcc521a6a0.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Puissance RMS du Subwoofer : 65 W",
+     "Bluetooth : Oui",
+     "Modèle du Bluetooth : 5.3",
+     "Wifi : Non",
+     "Quantité de ports HDMI : 2",
+     "Entrée HDMI : 1",
+     "Nombre de sorties HDMI : 1",
+     "Poids du Soundbar : 2,4 kg",
+     "Poids du Subwoofer : 5,7 kg",
+     "Canaux de sortie audio : 2.1.2 canaux",
+     "Décodeurs audio intégrés : Dolby Atmos",
+     "Canal de retour audio amélioré (eARC) : Oui"
+    ]
+   },
+   "desc": "ASUS S701 ROG GJALLAR/CA, 2.1.2 canaux, Dolby Atmos, 2,54 cm (1\"), 2,7 cm, 16,5 cm (6.5\"), 16,5 cm",
+   "product": {
+    "ico": "🎧",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS S701 ROG GJALLAR/CA Noir 2.1.2 canaux",
+     "en": "ASUS S701 ROG GJALLAR/CA Noir 2.1.2 canaux"
+    },
+    "cat": "smart",
+    "tags": [
+     "ASUS",
+     "audio"
+    ],
+    "ref": 0
+   }
+  },
+  "iccfd86417": {
+   "label": "Nintendo Switch 2 & Mario Kart World console de jeux portables 20,1 cm (7.9\") 256 Go Écran tactile Wifi Noir (10020023)",
+   "brand": "Nintendo",
+   "mpn": "10020023",
+   "rayon": "console",
+   "photo": "https://images.icecat.biz/img/gallery/e16a6c7113da6a186397b1c517f7f92677c38f9a.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Plateforme : Nintendo Switch 2",
+     "Taille de l'écran : 20,1 cm (7.9\")",
+     "Résolution de l'écran : 1920 x 1080 pixels",
+     "Taux de rafraîchissement variable (VRR) : Oui",
+     "Résolution écran externe : 3840 x 2160 pixels",
+     "Type de support de stockage : Flash",
+     "Wifi : Oui",
+     "Bluetooth : Oui",
+     "Standards wifi : Wi-Fi 6 (802.11ax)",
+     "HDMI : Oui",
+     "Type de batterie : Intégré",
+     "Autonomie maximum de la batterie : 6,5 h"
+    ]
+   },
+   "desc": "Inclut une console Nintendo Switch 2, le jeu complet Mario Kart World en téléchargement et un code pour un abonnement individuel de trois mois (90 jours) à Nintendo Switch Online. L'évolution de la Nintendo Switch est arrivée ! Donnez une nouvelle dimension à vos jeux avec un écran plus grand 1080p, ou connectez la console à un téléviseur pour profiter d'une définition allant jusqu'à 4K. La prise en charge du HDR, du VRR et de fréquences d'images allant jusqu'à 120 images par seconde vous permet de profiter de couleurs éclatantes, d'une image nette et d'une expérience de jeu fluide. Attachez l",
+   "product": {
+    "ico": "🎮",
+    "brand": "Nintendo",
+    "n": {
+     "fr": "Nintendo Switch 2 & Mario Kart World console de jeux portables 20,1 cm (7.9\") 256 Go Écran tactile W",
+     "en": "Nintendo Switch 2 & Mario Kart World console de jeux portables 20,1 cm (7.9\") 256 Go Écran tactile W"
+    },
+    "cat": "smart",
+    "tags": [
+     "Nintendo",
+     "console"
+    ],
+    "ref": 0
+   }
+  },
+  "ic2c3ce3af": {
+   "label": "Samsung Keyboard Pro pour Galaxy Tab S12+ (EF-DX845BJEGFR)",
+   "brand": "Samsung",
+   "mpn": "EF-DX845BJEGFR",
+   "rayon": "office",
+   "photo": "https://images.icecat.biz/img/gallery/396781ad1754d5707de8e3a2b0a35017190cbd22.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Poids : 610 g",
+     "Language du clavier : Français",
+     "Nombre de touches du clavier : 81",
+     "Dispositif de pointage : Pavé tactile",
+     "Pavé numérique : Non",
+     "Compatibilité de marque : Samsung",
+     "Compatibilité : Galaxy Tab S12+",
+     "Couverture : Oui",
+     "Rétroéclairage : Non",
+     "Technologie de connectivité : Station d'accueil",
+     "Interface de l'appareil : Pogo Pin",
+     "Source d'alimentation : Station d'accueil"
+    ]
+   },
+   "desc": "Conçu pour sadapter à votre Galaxy Tab S12+ Le Keyboard Pro pour Galaxy Tab S12+ offre une expérience de frappe fluide et une utilisation confortable du pavé tactile dans un design fin et portable. Il est doté dun boîtier en aluminium qui sadapte à votre tablette. Sa charnière en métal résistante donne au Keyboard Pro et à la Galaxy Tab S12+ un aspect haut de gamme et une finition premium. Plus despace. Plus de contrôle Avec un trackpad agrandi de 14,6 %, chaque interaction gagne en fluidité et en précision. Les gestes du quotidien, comme le défilement ou le zoom, deviennent plus naturels et p",
+   "product": {
+    "ico": "🖥️",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Keyboard Pro pour Galaxy Tab S12+",
+     "en": "Samsung Keyboard Pro pour Galaxy Tab S12+"
+    },
+    "cat": "eng",
+    "tags": [
+     "Samsung",
+     "office"
+    ],
+    "ref": 0
+   }
+  },
+  "icdce82b97": {
+   "label": "Dreame Navo Care 1 Incam Caméra de sécurité IP Intérieure 2880 x 1600 pixels Plafond/Mur/Bureau (A131)",
+   "brand": "Dreame",
+   "mpn": "A131",
+   "rayon": "gadget-home",
+   "photo": "https://images.icecat.biz/img/gallery/aa0871007b3d2f2b2f7cac726eeba268835deb23.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Commande de panoramique de la caméra : Oui",
+     "Panoramique : 0 - 360°",
+     "Résolution maximale : 2880 x 1600 pixels",
+     "Wifi : Oui",
+     "Standards wifi : 802.11a, 802.11b, 802.11g, Wi-Fi 4 (802.11n), Wi-Fi 5 (802.11ac)",
+     "Bluetooth : Non",
+     "Type : Caméra de sécurité IP",
+     "Installation prise en charge : Intérieure",
+     "Technologie de connectivité : Sans fil",
+     "suivi automatique : Oui",
+     "Assistant virtuel : Amazon Alexa & Google Assistant",
+     "mode Jour/Nuit : Oui"
+    ]
+   },
+   "desc": "Dreame Navo Care 1 Incam, Caméra de sécurité IP, Intérieure, Sans fil, Amazon Alexa & Google Assistant, Plafond/Mur/Bureau, Blanc",
+   "product": {
+    "ico": "🏠",
+    "brand": "Dreame",
+    "n": {
+     "fr": "Dreame Navo Care 1 Incam Caméra de sécurité IP Intérieure 2880 x 1600 pixels Plafond/Mur/Bureau",
+     "en": "Dreame Navo Care 1 Incam Caméra de sécurité IP Intérieure 2880 x 1600 pixels Plafond/Mur/Bureau"
+    },
+    "cat": "future",
+    "tags": [
+     "Dreame",
+     "gadget-home"
+    ],
+    "ref": 0
+   }
+  },
+  "ic7f851c72": {
+   "label": "Samsung ET-LA710 Bleu, Blanc LED (ET-LA710BLEGWW)",
+   "brand": "Samsung",
+   "mpn": "ET-LA710BLEGWW",
+   "rayon": "gadget-camping",
+   "photo": "https://images.icecat.biz/img/gallery/16f99221d956801673fb11b7d9b8593b0884f6f6.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Poids : 35,6 g",
+     "Produits compatibles : Samsung EB-PA710",
+     "Imperméable : Non",
+     "Type de lampe : LED",
+     "Flux lumineux : 57 lm",
+     "Température de couleur : 3900 K",
+     "Source de chargement : USB",
+     "Consommation électrique typique : 0,7 W",
+     "Tension : 5 V",
+     "Largeur : 88,3 mm",
+     "Profondeur : 37,2 mm",
+     "Hauteur : 23,2 mm"
+    ]
+   },
+   "desc": "Samsung ET-LA710, Bleu, Blanc, Samsung EB-PA710, LED, 57 lm, 3900 K, Blanc",
+   "product": {
+    "ico": "⛺",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung ET-LA710 Bleu, Blanc LED",
+     "en": "Samsung ET-LA710 Bleu, Blanc LED"
+    },
+    "cat": "future",
+    "tags": [
+     "Samsung",
+     "gadget-camping"
+    ],
+    "ref": 0
+   }
+  },
+  "ic4ab91421": {
+   "label": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc (SP-LFF3HLAXXZA)",
+   "brand": "Samsung",
+   "mpn": "SP-LFF3HLAXXZA",
+   "rayon": "gadget-culture",
+   "photo": "https://images.icecat.biz/img/gallery/f5700adbfa1bde1cee0489485742bdeb2f51e127.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Résolution native du projecteur : 1080p (1920x1080)",
+     "Type de connecteur HDMI : Micro",
+     "Quantité de ports HDMI : 1",
+     "Wifi : Oui",
+     "Standards wifi : Wi-Fi 5 (802.11ac)",
+     "Bluetooth : Oui",
+     "Modèle du Bluetooth : 5.2",
+     "Puissance évaluée de RMS : 5 W",
+     "Technologie batterie : Lithium-Ion (Li-Ion)",
+     "Poids : 1 kg",
+     "Poids du paquet : 2,2 kg",
+     "Technologie de traitement d'image : Samsung Contrast Enhancer"
+    ]
+   },
+   "desc": "Samsung SP-LFF3HLAX, 430 ANSI lumens, DLP, 1080p (1920x1080), 100000:1, 16:9, 762 - 2540 mm (30 - 100\")",
+   "product": {
+    "ico": "🔭",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc",
+     "en": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc"
+    },
+    "cat": "future",
+    "tags": [
+     "Samsung",
+     "gadget-culture"
+    ],
+    "ref": 0
+   }
+  }
+ }
+}
