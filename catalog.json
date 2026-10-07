@@ -779,6 +779,837 @@
     ],
     "ref": 0
    }
+  },
+  "ica3f07638": {
+   "kind": "device",
+   "secondary": true,
+   "sold": "main",
+   "compat": "",
+   "label": "ASUS ROG G700 GM700TZ-R8700F150W PC AMD Ryzen™ 7 8700F 32 Go DDR5-SDRAM 1 To SSD NVIDIA GeForce RTX 5070 Windows 11 Home (GM700TZ-R8700F150W)",
+   "brand": "ASUS",
+   "mpn": "GM700TZ-R8700F150W",
+   "rayon": "pc",
+   "photo": "https://images.icecat.biz/img/gallery/80948deff0c6fefd1a14eb3cfa88e27af0cdb204.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Modèle de processeur : 8700F",
+     "Mémoire interne : 32 Go",
+     "Mémoire interne maximale : 64 Go",
+     "Type de mémoire interne : DDR5-SDRAM",
+     "Capacité totale de stockage : 1 To",
+     "Supports de stockage : SSD",
+     "Adaptateur de carte graphique distinct : Oui",
+     "Fabricant de carte graphique discrète : AMD",
+     "Carte graphique intégrée : Non",
+     "Mémoire carte graphique distincte : 12 Go",
+     "Type de carte graphique : GDDR7",
+     "Quantité de ports HDMI de la carte graphique : 1"
+    ]
+   },
+   "desc": "ASUS ROG G700 GM700TZ-R8700F150W, 4,1 GHz, AMD Ryzen™ 7, 8700F, 32 Go, 1 To, Windows 11 Home",
+   "product": {
+    "ico": "💻",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS ROG G700 GM700TZ-R8700F150W PC AMD Ryzen™ 7 8700F 32 Go DDR5-SDRAM 1 To SSD NVIDIA GeForce RTX ",
+     "en": "ASUS ROG G700 GM700TZ-R8700F150W PC AMD Ryzen™ 7 8700F 32 Go DDR5-SDRAM 1 To SSD NVIDIA GeForce RTX "
+    },
+    "cat": "eng",
+    "tags": [
+     "ASUS",
+     "pc"
+    ],
+    "ref": 0
+   }
+  },
+  "iced8747bb": {
+   "kind": "device",
+   "secondary": true,
+   "sold": "main",
+   "compat": "",
+   "label": "Samsung Galaxy Tab S12 Ultra 5G (14,6\") (SM-X946BZSTEUB)",
+   "brand": "Samsung",
+   "mpn": "SM-X946BZSTEUB",
+   "rayon": "tablet",
+   "photo": "https://images.icecat.biz/img/gallery/e7586e040971036ee7331f2e7c21a9d2af4055a2.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille de l'écran : 37,1 cm (14.6\")",
+     "Résolution de l'écran : 2960 x 1848 pixels",
+     "Mémoire interne : 16 Go",
+     "Capacité de stockage interne : 1 To",
+     "Résolution de la caméra arrière (numerique) : 13 MP",
+     "Résolution de la seconde caméra arrière (numérique) : 8 MP",
+     "Résolution vidéo maximale : 3840 x 2160 pixels",
+     "Résolution de la caméra avant (numerique) : 12 MP",
+     "Bluetooth : Oui",
+     "Norme Wi-Fi : Wi-Fi 7 (802.11be)",
+     "Wi-Fi Direct : Oui",
+     "Plateforme : Android"
+    ]
+   },
+   "desc": "Fine et légère, prête à vous suivre partout. La Galaxy Tab S12 Ultra allie un design premium épuré et un grand écran à la magie du S Pen, pour un usage idéal aussi bien pour étudier que pour la productivité au travail, où que vous emmène votre journée. Conçue dans un format fin et léger, votre Galaxy Tab se glisse partout pour vous accompagner sans effort au studio, au bureau ou lors de votre prochain voyage. Son grand écran de 14,6 pouces la transforme en véritable atelier créatif. Le S Pen inclus, apporte une précision naturelle pour donner vie à vos créations. Une charge, 23 heures d'autono",
+   "product": {
+    "ico": "📲",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Galaxy Tab S12 Ultra 5G (14,6\")",
+     "en": "Samsung Galaxy Tab S12 Ultra 5G (14,6\")"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "tablet"
+    ],
+    "ref": 0
+   }
+  },
+  "ic41cb9891": {
+   "kind": "device",
+   "secondary": true,
+   "sold": "main",
+   "compat": "",
+   "label": "Dreame D40 Ultra Blanc (DI2889)",
+   "brand": "Dreame",
+   "mpn": "DI2889",
+   "rayon": "home-appliance",
+   "photo": "https://images.icecat.biz/img/gallery/2c758304fc61e79e55c4e99a9f610154dce919e6.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Wifi : Oui",
+     "Type de navigation : Laser Distance Sensor (LDS)",
+     "Technologie batterie : Lithium-Ion (Li-Ion)",
+     "Capacité de la batterie : 6400 mAh",
+     "Poids : 14,9 kg",
+     "Poids du paquet : 20,1 kg",
+     "Puissance d'aspiration : 12000 Pascal",
+     "Type de conteneur à poussière : Sans sac",
+     "Forme : Rond",
+     "Type de bac à poussière (base) : Sac à poussière",
+     "Lavage humide : Oui",
+     "Contenance en poussière (base) : 3,2 L"
+    ]
+   },
+   "desc": "Dreame D40 Ultra, Sans sac, Blanc, Rond, Sac à poussière, Chargement, Purification, 76 dB",
+   "product": {
+    "ico": "🧹",
+    "brand": "Dreame",
+    "n": {
+     "fr": "Dreame D40 Ultra Blanc",
+     "en": "Dreame D40 Ultra Blanc"
+    },
+    "cat": "smart",
+    "tags": [
+     "Dreame",
+     "home-appliance"
+    ],
+    "ref": 0
+   }
+  },
+  "ic3b544da2": {
+   "kind": "device",
+   "secondary": false,
+   "sold": "main",
+   "compat": "",
+   "label": "Samsung Galaxy Watch9 3,3 cm (1.3\") AMOLED 40 mm Numérique 438 x 438 pixels Écran tactile Graphite Wifi GPS (satellite) (SM-L340NZKAXSA)",
+   "brand": "Samsung",
+   "mpn": "SM-L340NZKAXSA",
+   "rayon": "watch",
+   "photo": "https://images.icecat.biz/img/gallery/42dd66ac1fd736bf2e1f405e29dc26d46b845141.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille de l'écran : 3,3 cm (1.3\")",
+     "Résolution de l'écran : 438 x 438 pixels",
+     "Capacité de la RAM : 2000 Mo",
+     "Standards wifi : 802.11a, 802.11b, 802.11g, Wi-Fi 4 (802.11n)",
+     "Bluetooth : Oui",
+     "Profils Bluetooth : A2DP, AVRCP, HFP, HSP",
+     "Wifi : Oui",
+     "Modèle du Bluetooth : 6.0",
+     "Type de batterie : Batterie intégré",
+     "Autonomie maximum de la batterie : 40 h",
+     "Capacité de la batterie : 390 mAh",
+     "Poids : 31,5 g"
+    ]
+   },
+   "desc": "Samsung Galaxy Watch9 , 3,3 cm (1.3\"), AMOLED, Écran tactile, 32 Go, GPS (satellite), 31,5 g",
+   "product": {
+    "ico": "⌚",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Galaxy Watch9 3,3 cm (1.3\") AMOLED 40 mm Numérique 438 x 438 pixels Écran tactile Graphite W",
+     "en": "Samsung Galaxy Watch9 3,3 cm (1.3\") AMOLED 40 mm Numérique 438 x 438 pixels Écran tactile Graphite W"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "watch"
+    ],
+    "ref": 0
+   }
+  },
+  "icabee0222": {
+   "kind": "device",
+   "secondary": false,
+   "sold": "main",
+   "compat": "",
+   "label": "Lenovo YOGA PC Edition Casque Avec fil &sans fil Arceau Appels/Musique USB Type-C Bluetooth Bleu (GXD1U36672)",
+   "brand": "Lenovo",
+   "mpn": "GXD1U36672",
+   "rayon": "audio",
+   "photo": "https://images.icecat.biz/img/gallery/5b7ed10f0a2dd84872db0cb433ea3e660681b98d.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Bluetooth : Oui",
+     "Modèle du Bluetooth : 5.3",
+     "Portée du routeur sans fil : 30 m",
+     "Capacité de la batterie : 640 mAh",
+     "Poids : 270 g",
+     "Poids du paquet : 1,02 kg",
+     "Style de casque portable : Arceau",
+     "Utilisation recommandée : Appels/Musique",
+     "Type de casque : Binaural",
+     "Nom de la couleur : Cosmic Blue",
+     "Type de commande : Boutons, Tactile, Glissière",
+     "Certification : CB, BQB, CE, UKCA, RCM, EAC, FCC, ICES, WPC, SRRC, IMDA, JRF"
+    ]
+   },
+   "desc": "Lenovo YOGA PC Edition, Avec fil &sans fil, 20 - 20000 Hz, Appels/Musique, 270 g, Casque, Bleu",
+   "product": {
+    "ico": "🎧",
+    "brand": "Lenovo",
+    "n": {
+     "fr": "Lenovo YOGA PC Edition Casque Avec fil &sans fil Arceau Appels/Musique USB Type-C Bluetooth Bleu",
+     "en": "Lenovo YOGA PC Edition Casque Avec fil &sans fil Arceau Appels/Musique USB Type-C Bluetooth Bleu"
+    },
+    "cat": "smart",
+    "tags": [
+     "Lenovo",
+     "audio"
+    ],
+    "ref": 0
+   }
+  },
+  "ic6f7fb12b": {
+   "kind": "device",
+   "secondary": true,
+   "sold": "main",
+   "compat": "",
+   "label": "Nintendo Switch Lite & Tomodachi Life : Une vie de rêve (10020218)",
+   "brand": "Nintendo",
+   "mpn": "10020218",
+   "rayon": "console",
+   "photo": "https://images.icecat.biz/img/gallery/817c2f10c0202009febf4e0a69d39d717df12b8e.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Plateforme : Nintendo Switch Lite",
+     "Modèle de processeur : NVIDIA Custom Tegra",
+     "Taille de l'écran : 14 cm (5.5\")",
+     "Résolution de l'écran : 1280 x 720 pixels",
+     "Wifi : Oui",
+     "Bluetooth : Oui",
+     "Standards wifi : 802.11a, 802.11b, 802.11g, Wi-Fi 4 (802.11n), Wi-Fi 5 (802.11ac)",
+     "Modèle du Bluetooth : 4.1",
+     "Autonomie maximum de la batterie : 7 h",
+     "Puissance de charge requise (min) : 2,5 W",
+     "Puissance de charge requise (max) : 9 W",
+     "Poids : 275 g"
+    ]
+   },
+   "desc": "Ce pack de console comprend une console Nintendo Switch Lite (turquoise) et le jeu Tomodachi Life: Une vie de rêve (téléchargement requis). Dédiée au jeu portable ! La Nintendo Switch Lite est une nouvelle venue compacte et légère dans la gamme Nintendo Switch, avec commandes intégrées. La Nintendo Switch Lite est compatible avec tous les logiciels Nintendo Switch utilisables en mode portable. C'est la console parfaite pour tous les utilisateurs qui jouent fréquemment à l'extérieur, et pour tous les joueurs qui souhaitent jouer en ligne ou en multijoueur local sans fil en famille ou avec leurs",
+   "product": {
+    "ico": "🎮",
+    "brand": "Nintendo",
+    "n": {
+     "fr": "Nintendo Switch Lite & Tomodachi Life : Une vie de rêve",
+     "en": "Nintendo Switch Lite & Tomodachi Life : Une vie de rêve"
+    },
+    "cat": "smart",
+    "tags": [
+     "Nintendo",
+     "console"
+    ],
+    "ref": 0
+   }
+  },
+  "icbb815600": {
+   "kind": "device",
+   "secondary": false,
+   "sold": "main",
+   "compat": "",
+   "label": "ASUS ProArt OLED PA329CDV écran plat de PC 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED Noir, Argent (90LM02C0-B01K71)",
+   "brand": "ASUS",
+   "mpn": "90LM02C0-B01K71",
+   "rayon": "office",
+   "photo": "https://images.icecat.biz/img/gallery/2af19439f06d317a0e9ceee7a907e0cd31fee394.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille de l'écran : 80 cm (31.5\")",
+     "Résolution de l'écran : 3840 x 2160 pixels",
+     "Puissance évaluée de RMS : 4 W",
+     "Capacité de puissance USB : Oui",
+     "Délivrance de la puissance USB jusqu’à : 96 W",
+     "HDMI : Oui",
+     "Quantité de ports HDMI : 1",
+     "Version HDMI : 2.1",
+     "Poids (avec support) : 7,05 kg",
+     "Poids (sans support) : 4,47 kg",
+     "Poids du paquet : 11,2 kg",
+     "Type HD : 4K Ultra HD"
+    ]
+   },
+   "desc": "ASUS ProArt OLED PA329CDV, 80 cm (31.5\"), 3840 x 2160 pixels, 4K Ultra HD, QD-OLED, 0,1 ms, Noir, Argent",
+   "product": {
+    "ico": "🖥️",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS ProArt OLED PA329CDV écran plat de PC 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED Noir",
+     "en": "ASUS ProArt OLED PA329CDV écran plat de PC 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED Noir"
+    },
+    "cat": "eng",
+    "tags": [
+     "ASUS",
+     "office"
+    ],
+    "ref": 0
+   }
+  },
+  "ic36477938": {
+   "kind": "device",
+   "secondary": false,
+   "sold": "main",
+   "compat": "",
+   "label": "Lenovo Huddly Crew 20 MP Noir 1920 x 1080 pixels 30 ips (40CNAAABWW)",
+   "brand": "Lenovo",
+   "mpn": "40CNAAABWW",
+   "rayon": "gadget-home",
+   "photo": "https://images.icecat.biz/img/gallery/242b49845655f7e4a5e6bc82de4111e4c571864a.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Résolution vidéo maximale : 1920 x 1080 pixels",
+     "Poids : 600 g",
+     "Poids du paquet : 1,2 kg",
+     "Type d'appareil photo : Caméra unique",
+     "Mégapixel : 20 MP",
+     "point de vue angle (FOV) : 103°",
+     "point de vue horizontale : 92°",
+     "point de vue verticale : 65°",
+     "Type HD : Full HD",
+     "Cadence maximale : 30 ips",
+     "Modes vidéo pris en charge : 1080p, 720p",
+     "Format vidéo pris en charge : M-JPEG"
+    ]
+   },
+   "desc": "Lenovo Huddly Crew, 20 MP, Full HD, 1920 x 1080 pixels, 30 ips, 103°, Noir",
+   "product": {
+    "ico": "🏠",
+    "brand": "Lenovo",
+    "n": {
+     "fr": "Lenovo Huddly Crew 20 MP Noir 1920 x 1080 pixels 30 ips",
+     "en": "Lenovo Huddly Crew 20 MP Noir 1920 x 1080 pixels 30 ips"
+    },
+    "cat": "future",
+    "tags": [
+     "Lenovo",
+     "gadget-home"
+    ],
+    "ref": 0
+   }
+  },
+  "ic8a2b6dfe": {
+   "kind": "device",
+   "secondary": true,
+   "sold": "main",
+   "compat": "",
+   "label": "Samsung SP-LSP3BLA Projecteur à focale ultra courte 550 ANSI lumens DLP 1080p (1920x1080) Noir, Blanc (SP-LSP3BLAXZC)",
+   "brand": "Samsung",
+   "mpn": "SP-LSP3BLAXZC",
+   "rayon": "gadget-culture",
+   "photo": "https://images.icecat.biz/img/gallery/29a8d06df618bdf974b41cb8b942f43d2726d50d.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Résolution native du projecteur : 1080p (1920x1080)",
+     "Type de connecteur HDMI : Micro",
+     "Version HDMI : 1.4",
+     "Quantité de ports HDMI : 1",
+     "Wifi : Oui",
+     "Standards wifi : Wi-Fi 5 (802.11ac)",
+     "Bluetooth : Oui",
+     "Modèle du Bluetooth : 5.2",
+     "Bluetooth Low Energy (BLE) : Oui",
+     "Guide de programme électronique : Oui",
+     "Puissance évaluée de RMS : 5 W",
+     "Poids : 800 g"
+    ]
+   },
+   "desc": "Samsung SP-LSP3BLA, 550 ANSI lumens, DLP, 1080p (1920x1080), 100000:1, 762 - 2540 mm (30 - 100\"), Samsung Contrast Enhancer, Samsung Auto Motion Plus",
+   "product": {
+    "ico": "🔭",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung SP-LSP3BLA Projecteur à focale ultra courte 550 ANSI lumens DLP 1080p (1920x1080) Noir, Blan",
+     "en": "Samsung SP-LSP3BLA Projecteur à focale ultra courte 550 ANSI lumens DLP 1080p (1920x1080) Noir, Blan"
+    },
+    "cat": "future",
+    "tags": [
+     "Samsung",
+     "gadget-culture"
+    ],
+    "ref": 0
+   }
+  },
+  "icf8403963": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Galaxy S26 FE",
+   "label": "Samsung EF-US741CTEGCA écran et protection arrière de téléphones portables Protection d'écran transparent 1 pièce(s) (EF-US741CTEGCA)",
+   "brand": "Samsung",
+   "mpn": "EF-US741CTEGCA",
+   "rayon": "acc-phone",
+   "photo": "https://images.icecat.biz/img/gallery/93fc41af1411becd9a0485d69a6de3d77282ac78.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Type de protecteur : Protection d'écran transparent",
+     "Compatibilité : Galaxy S26 FE",
+     "Taille maximale de l’écran : 17 cm (6.7\")",
+     "Compatibilité de marque : Samsung",
+     "Anti-reflet : Oui",
+     "Résistant aux traces de doigts : Oui",
+     "Quantité : 1 pièce(s)"
+    ]
+   },
+   "desc": "Samsung EF-US741CTEGCA, Samsung, Galaxy S26 FE, Transparent, 1 pièce(s)",
+   "product": {
+    "ico": "🔌",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung EF-US741CTEGCA écran et protection arrière de téléphones portables Protection d'écran transp",
+     "en": "Samsung EF-US741CTEGCA écran et protection arrière de téléphones portables Protection d'écran transp"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "acc-phone"
+    ],
+    "ref": 0
+   }
+  },
+  "ic882dfe33": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Galaxy S26 FE",
+   "label": "Samsung EF-CS741CTEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Transparent (EF-CS741CTEGCA)",
+   "brand": "Samsung",
+   "mpn": "EF-CS741CTEGCA",
+   "rayon": "acc-phone",
+   "photo": "https://images.icecat.biz/img/gallery/687c4fddc634d23d3b8d3a1d2fbe900e84771a3b.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille maximale de l’écran : 17 cm (6.7\")",
+     "Coloration de surface : Monochromatique",
+     "Compatibilité : Galaxy S26 FE",
+     "Type d'étui : Housse",
+     "Recharge sans fil : Oui",
+     "Compatibilité de marque : Samsung",
+     "Support de bureau : Non",
+     "Type de fermeture : Non applicable",
+     "Pochette de carte : Non",
+     "Résistant aux traces de doigts : Oui",
+     "Protection anti-jaunissement : Oui",
+     "Facile à appliquer : Oui"
+    ]
+   },
+   "desc": "Samsung EF-CS741CTEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Transparent",
+   "product": {
+    "ico": "🔌",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung EF-CS741CTEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Transparent",
+     "en": "Samsung EF-CS741CTEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Transparent"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "acc-phone"
+    ],
+    "ref": 0
+   }
+  },
+  "ic6ec815ef": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Galaxy S26 FE",
+   "label": "Samsung EF-ES741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Violet, Bleu (EF-ES741CLEGCA)",
+   "brand": "Samsung",
+   "mpn": "EF-ES741CLEGCA",
+   "rayon": "acc-phone",
+   "photo": "https://images.icecat.biz/img/gallery/5d2f72e72ca90ea4fed80a2572adbe3e6d9a0654.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille maximale de l’écran : 17 cm (6.7\")",
+     "Coloration de surface : Monochromatique",
+     "Compatibilité : Galaxy S26 FE",
+     "Type d'étui : Housse",
+     "Matériel : Silicone",
+     "Recharge sans fil : Oui",
+     "Compatible MagSafe : Oui",
+     "Compatibilité de marque : Samsung",
+     "Support de bureau : Non",
+     "Type de fermeture : Non applicable",
+     "Pochette de carte : Non",
+     "Résistant aux traces de doigts : Oui"
+    ]
+   },
+   "desc": "Samsung EF-ES741CLEGCA, Housse, Samsung, Galaxy S26 FE, 17 cm (6.7\"), Violet, Bleu",
+   "product": {
+    "ico": "🔌",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung EF-ES741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Violet, Ble",
+     "en": "Samsung EF-ES741CLEGCA coque de protection pour téléphones portables 17 cm (6.7\") Housse Violet, Ble"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "acc-phone"
+    ],
+    "ref": 0
+   }
+  },
+  "ic11a1e357": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Samsung",
+   "label": "Samsung Tab S12+ Anti-Reflecting Film de protection anti-reflets 1 pièce(s) (EF-UX840CTEGWW)",
+   "brand": "Samsung",
+   "mpn": "EF-UX840CTEGWW",
+   "rayon": "acc-tablet",
+   "photo": "https://images.icecat.biz/img/gallery/dfb20121f8c66fd1ad72271c39472169750e7a4c.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Type de trame : Sans encadrement",
+     "Poids : 20,1 g",
+     "Type de protection d'écran : Film de protection anti-reflets",
+     "Compatibilité de marque : Samsung",
+     "Compatibilité : Galaxy Tab S12 Plus",
+     "Fonctions de protection : Résistant aux rayures, Résistant à la poussière",
+     "Résistant aux traces de doigts : Oui",
+     "Facile à appliquer : Oui",
+     "Facile à retirer : Oui",
+     "Facile à nettoyer : Oui",
+     "Bouts arrondis : Oui",
+     "Largeur : 285,6 mm"
+    ]
+   },
+   "desc": "Samsung Tab S12+ Anti-Reflecting, Film de protection anti-reflets, 20,1 g, 1 pièce(s)",
+   "product": {
+    "ico": "⌨️",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Tab S12+ Anti-Reflecting Film de protection anti-reflets 1 pièce(s)",
+     "en": "Samsung Tab S12+ Anti-Reflecting Film de protection anti-reflets 1 pièce(s)"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "acc-tablet"
+    ],
+    "ref": 0
+   }
+  },
+  "ic2aeb2241": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Yoga Tab Gen 2",
+   "label": "Lenovo ZG38C08661 étui pour tablette 28,2 cm (11.1\") Folio Bleu (ZG38C08661)",
+   "brand": "Lenovo",
+   "mpn": "ZG38C08661",
+   "rayon": "acc-tablet",
+   "photo": "https://images.icecat.biz/img/gallery/94b296f6087deb8749007c8ad6edfc1c2f8b2ee9.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Batterie intégrée : Non",
+     "Poids : 199 g",
+     "Compatibilité : Yoga Tab Gen 2",
+     "Taille maximale de l’écran : 28,2 cm (11.1\")",
+     "Type d'étui : Folio",
+     "Matériel : Polyuréthane",
+     "Compatibilité de marque : Lenovo",
+     "Haut-parleurs intégrés : Non",
+     "Position debout : Oui",
+     "Fonctions de protection : Résistance aux chutes, Résistant aux rayures",
+     "Largeur : 178 mm",
+     "Profondeur : 252 mm"
+    ]
+   },
+   "desc": "Lenovo ZG38C08661, Folio, Lenovo, Yoga Tab Gen 2, 28,2 cm (11.1\"), 199 g",
+   "product": {
+    "ico": "⌨️",
+    "brand": "Lenovo",
+    "n": {
+     "fr": "Lenovo ZG38C08661 étui pour tablette 28,2 cm (11.1\") Folio Bleu",
+     "en": "Lenovo ZG38C08661 étui pour tablette 28,2 cm (11.1\") Folio Bleu"
+    },
+    "cat": "smart",
+    "tags": [
+     "Lenovo",
+     "acc-tablet"
+    ],
+    "ref": 0
+   }
+  },
+  "ic2f1647f0": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Ordinateur portable",
+   "label": "Lenovo 4X81W51849 stylet Gris (4X81W51849)",
+   "brand": "Lenovo",
+   "mpn": "4X81W51849",
+   "rayon": "acc-tablet",
+   "photo": "https://images.icecat.biz/img/gallery/c54fd99a133dbda28d7b5a937df9f3739317b86d.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Durée de vie de la batterie : 160 h",
+     "Compatibilité des périphériques : Ordinateur portable",
+     "Compatibilité de marque : Lenovo",
+     "Compatibilité : ThinkBook 14 2-in-1 G6 IPL",
+     "Nom de la couleur : Luna Grey",
+     "Certification : CE, UKCA, FCC, UL, KC, VCCI, NOM-019, RoHS, EAC, SABS, RCM",
+     "Largeur : 152 mm",
+     "Diamètre de l’extrémité : 9,13 mm",
+     "Température d'opération : 5 - 40 °C",
+     "Humidité relative de fonctionnement (H-H) : 30 - 80%",
+     "Quantité : 1 pièce(s)",
+     "Type d'emballage : Boîte"
+    ]
+   },
+   "desc": "Lenovo 4X81W51849, Ordinateur portable, Lenovo, Gris, ThinkBook 14 2-in-1 G6 IPL, Luna Grey, Gris",
+   "product": {
+    "ico": "⌨️",
+    "brand": "Lenovo",
+    "n": {
+     "fr": "Lenovo 4X81W51849 stylet Gris",
+     "en": "Lenovo 4X81W51849 stylet Gris"
+    },
+    "cat": "smart",
+    "tags": [
+     "Lenovo",
+     "acc-tablet"
+    ],
+    "ref": 0
+   }
+  },
+  "ic622a0b5d": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Samsung",
+   "label": "Samsung EF-DX840B QWERTZ Allemand Pogo Pin Noir (EF-DX840BBEGDE)",
+   "brand": "Samsung",
+   "mpn": "EF-DX840BBEGDE",
+   "rayon": "acc-pc",
+   "photo": "https://images.icecat.biz/img/gallery/4ff8f3aab0ab7ccc9e7cb44dfbf6dae8948c7a11.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Poids : 364,4 g",
+     "Disposition des touches du clavier : QWERTZ",
+     "Language du clavier : Allemand",
+     "Nombre de touches du clavier : 80",
+     "Dispositif de pointage : Non",
+     "Pavé numérique : Non",
+     "Compatibilité de marque : Samsung",
+     "Compatibilité : Galaxy Tab S12+",
+     "Couverture : Oui",
+     "Rétroéclairage : Non",
+     "Technologie de connectivité : Station d'accueil",
+     "Interface de l'appareil : Pogo Pin"
+    ]
+   },
+   "desc": "Samsung EF-DX840B, QWERTZ, Allemand, Samsung, Galaxy Tab S12+, Noir, Station d'accueil",
+   "product": {
+    "ico": "🖱️",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung EF-DX840B QWERTZ Allemand Pogo Pin Noir",
+     "en": "Samsung EF-DX840B QWERTZ Allemand Pogo Pin Noir"
+    },
+    "cat": "eng",
+    "tags": [
+     "Samsung",
+     "acc-pc"
+    ],
+    "ref": 0
+   }
+  },
+  "icbf5a0538": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "Samsung",
+   "label": "Samsung EF-DX845B QWERTZ Allemand Pogo Pin Argent (EF-DX845BSEGDE)",
+   "brand": "Samsung",
+   "mpn": "EF-DX845BSEGDE",
+   "rayon": "acc-pc",
+   "photo": "https://images.icecat.biz/img/gallery/03ab0b2fd99e09deb9b475f884ba62bdefe07c09.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Poids : 610 g",
+     "Disposition des touches du clavier : QWERTZ",
+     "Language du clavier : Allemand",
+     "Nombre de touches du clavier : 81",
+     "Dispositif de pointage : Pavé tactile",
+     "Pavé numérique : Non",
+     "Compatibilité de marque : Samsung",
+     "Compatibilité : Galaxy Tab S12+",
+     "Couverture : Oui",
+     "Rétroéclairage : Non",
+     "Technologie de connectivité : Station d'accueil",
+     "Interface de l'appareil : Pogo Pin"
+    ]
+   },
+   "desc": "Samsung EF-DX845B, QWERTZ, Allemand, Pavé tactile, Samsung, Galaxy Tab S12+, Argent",
+   "product": {
+    "ico": "🖱️",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung EF-DX845B QWERTZ Allemand Pogo Pin Argent",
+     "en": "Samsung EF-DX845B QWERTZ Allemand Pogo Pin Argent"
+    },
+    "cat": "eng",
+    "tags": [
+     "Samsung",
+     "acc-pc"
+    ],
+    "ref": 0
+   }
+  },
+  "ic7c75cb61": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "",
+   "label": "Lenovo 4Y41V37376 clavier maison/bureau USB + RF Wireless + Bluetooth Anglais américain Gris (4Y41V37376)",
+   "brand": "Lenovo",
+   "mpn": "4Y41V37376",
+   "rayon": "acc-pc",
+   "photo": "https://images.icecat.biz/img/gallery/a564ebb0c4d622c9cd4851c79c379034d744c6e4.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Modèle du Bluetooth : 5.3",
+     "Bluetooth Low Energy (BLE) : Oui",
+     "Durée de vie de la batterie : 5 mois",
+     "Temps de rechargement de la batterie : 4,5 h",
+     "Capacité de la batterie : 2400 mAh",
+     "Poids du clavier : 715 g",
+     "Poids du paquet : 1,01 kg",
+     "Utilisation recommandée : maison/bureau",
+     "Technologie de connectivité : Avec fil &sans fil",
+     "Interface de l'appareil : USB + RF Wireless + Bluetooth",
+     "Interrupteur à clé de clavier : Interrupteur à clé optique",
+     "Language du clavier : Anglais américain"
+    ]
+   },
+   "desc": "Lenovo 4Y41V37376, Sans clé (80 - 87%), Avec fil &sans fil, USB + RF Wireless + Bluetooth, Interrupteur à clé optique, LED, Gris",
+   "product": {
+    "ico": "🖱️",
+    "brand": "Lenovo",
+    "n": {
+     "fr": "Lenovo 4Y41V37376 clavier maison/bureau USB + RF Wireless + Bluetooth Anglais américain Gris",
+     "en": "Lenovo 4Y41V37376 clavier maison/bureau USB + RF Wireless + Bluetooth Anglais américain Gris"
+    },
+    "cat": "eng",
+    "tags": [
+     "Lenovo",
+     "acc-pc"
+    ],
+    "ref": 0
+   }
+  },
+  "ic3668303c": {
+   "kind": "accessory",
+   "secondary": false,
+   "sold": "separate",
+   "compat": "",
+   "label": "ASUS ROG FALCHION ACE clavier Gaming USB QWERTY US International Noir (FALCHION ACE/NXRD/BLK/US/PBT)",
+   "brand": "ASUS",
+   "mpn": "FALCHION ACE/NXRD/BLK/US/PBT",
+   "rayon": "acc-gaming",
+   "photo": "https://images.icecat.biz/img/gallery/a59f128ba62c66f260f77b461e4ffef8f7539cfc.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Poids du clavier : 643 g",
+     "Technologie de touches de clavier à interrupteurs : ROG NX Red",
+     "Utilisation recommandée : Gaming",
+     "Technologie de connectivité : Avec fil",
+     "Interface de l'appareil : USB",
+     "Interrupteur à clé de clavier : Magnetic-mechanical key switch",
+     "Disposition des touches du clavier : QWERTY",
+     "Language du clavier : US International",
+     "Dispositif de pointage : Pavé tactile",
+     "Facteur de forme du clavier : 65%",
+     "Pavé numérique : Non",
+     "Touches directes : Oui"
+    ]
+   },
+   "desc": "ASUS ROG FALCHION ACE, Avec fil, USB, Magnetic-mechanical key switch, QWERTY, LED RGB, Noir",
+   "product": {
+    "ico": "🕹️",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS ROG FALCHION ACE clavier Gaming USB QWERTY US International Noir",
+     "en": "ASUS ROG FALCHION ACE clavier Gaming USB QWERTY US International Noir"
+    },
+    "cat": "eng",
+    "tags": [
+     "ASUS",
+     "acc-gaming"
+    ],
+    "ref": 0
+   }
   }
  }
 }
