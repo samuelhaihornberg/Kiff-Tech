@@ -54,7 +54,8 @@ const ram = txt => { const m = /(\d+(?:[.,]\d+)?)\s*(GB|Go|TB|To)\b/i.exec(txt |
       const gb = ram(ramLine && ramLine[1]);
       if (r.minRamGB && gb < r.minRamGB) { console.log('–', c.brand, code, 'RAM', gb || '?', 'Go < ' + r.minRamGB); await new Promise(z => setTimeout(z, 400)); continue; }
       const title = (d.GeneralInfo && d.GeneralInfo.Title) || (c.brand + ' ' + code);
-      if (!r.allowAccessories && EXCL.test(title)) { console.log('–', c.brand, code, 'accessoire écarté'); continue; }
+      const ACC = feats.some(([k]) => /^(produits? compatibles?|compatibilit[ée]( de marque)?|compatible avec|appareils? compatibles?)/i.test(k));
+      if (!r.allowAccessories && (EXCL.test(title) || ACC)) { console.log('–', c.brand, code, 'accessoire écarté'); continue; }
       const PRI = /m[ée]moire interne|ram|processeur.*mod|mod[eè]le de processeur|carte graphique|gpu|stockage|capacit[ée] total|taille de l.[ée]cran|r[ée]solution|fr[ée]quence de rafra|taux de rafra|autonomie|batterie|puissance|aspiration|navigation|wi-?fi|bluetooth|hdmi|poids|plateforme|portée|[ée]tanch/i;
       const ok = feats.filter(([k, v]) => k && v && String(v).length < 70 && !/^(couleur|cat[ée]gorie|type de produit)/i.test(k));
       const facts = ok.filter(([k]) => PRI.test(k)).concat(ok.filter(([k]) => !PRI.test(k))).slice(0, 12).map(([k, v]) => k + ' : ' + v);
