@@ -3,7 +3,7 @@
 const fs = require('fs'), path = require('path'), zlib = require('zlib'), crypto = require('crypto');
 const { Readable } = require('stream');
 const USER = process.env.ICECAT_USER || 'SAMUELhai', PASS = process.env.ICECAT_PASS || '';
-const MAXD = +process.env.MAX_DETAIL || 300, LANG = process.env.ICECAT_LANG || 'fr', DRY = !!process.env.DRY;
+const MAXD = +process.env.MAX_DETAIL || 700, LANG = process.env.ICECAT_LANG || 'fr', DRY = !!process.env.DRY;
 const BASE = process.env.ICECAT_BASE || 'https://data.icecat.biz/export/freexml.int';
 const R = JSON.parse(fs.readFileSync(path.join(__dirname, 'rayons.json'), 'utf8'));
 const EXCL = new RegExp(R.exclude || 'cover|case|housse|étui|coque|pogo|dock|protector|protecteur|strap|bracelet de rechange|cable|câble|adapter|adaptateur|charger|chargeur|stylus|pen tip|film|refill|filtre|brosse|serpillière', 'i');
@@ -52,23 +52,25 @@ const ram = txt => { const m = /(\d+(?:[.,]\d+)?)\s*(GB|Go|TB|To)\b/i.exec(txt |
       const feats = []; (d.FeaturesGroups || []).forEach(g => (g.Features || []).forEach(f => feats.push([(f.Feature && f.Feature.Name && f.Feature.Name.Value) || '', f.PresentationValue || f.Value || ''])));
       const ramLine = feats.find(([k]) => /internal memory|ram|m[ée]moire interne|m[ée]moire vive/i.test(k) && !/storage|stockage/i.test(k));
       const gb = ram(ramLine && ramLine[1]);
-      if (r.minRamGB && gb < r.minRamGB) { console.log('–', c.brand, code, 'RAM', gb || '?', 'Go < ' + r.minRamGB); await new Promise(z => setTimeout(z, 400)); continue; }
+      const isAcc = !!r.accessory;
+      if (!isAcc && r.minRamGB && gb < r.minRamGB) { console.log('–', c.brand, code, 'RAM', gb || '?', 'Go < ' + r.minRamGB); await new Promise(z => setTimeout(z, 400)); continue; }
       const title = (d.GeneralInfo && d.GeneralInfo.Title) || (c.brand + ' ' + code);
-      const ACC = feats.some(([k]) => /^(produits? compatibles?|compatibilit[ée]( de marque)?|compatible avec|appareils? compatibles?)/i.test(k));
-      if (!r.allowAccessories && (EXCL.test(title) || ACC)) { console.log('–', c.brand, code, 'accessoire écarté'); continue; }
+      const ACC = feats.some(([k]) => /^(produits? compatibles?|compatibilit[ée]( de marque)?|compatible avec|appareils? compatibles?)\s*$/i.test(k));
+      if (!isAcc && !r.minRamGB && !r.allowAccessories && (EXCL.test(title) || ACC)) { console.log('–', c.brand, code, 'accessoire écarté'); continue; }
       const PRI = /m[ée]moire interne|ram|processeur.*mod|mod[eè]le de processeur|carte graphique|gpu|stockage|capacit[ée] total|taille de l.[ée]cran|r[ée]solution|fr[ée]quence de rafra|taux de rafra|autonomie|batterie|puissance|aspiration|navigation|wi-?fi|bluetooth|hdmi|poids|plateforme|portée|[ée]tanch/i;
       const ok = feats.filter(([k, v]) => k && v && String(v).length < 70 && !/^(couleur|cat[ée]gorie|type de produit)/i.test(k));
       const facts = ok.filter(([k]) => PRI.test(k)).concat(ok.filter(([k]) => !PRI.test(k))).slice(0, 12).map(([k, v]) => k + ' : ' + v);
+      const compat = (feats.find(([k]) => /^(produits? compatibles?|compatibilit[ée]|compatible avec|appareils? compatibles?)/i.test(k)) || [])[1] || '';
       const desc = ((d.GeneralInfo || {}).Description || {}).LongDesc || (((d.GeneralInfo || {}).SummaryDescription || {}).ShortSummaryDescription) || '';
       const img = (d.Image && (d.Image.HighPic || d.Image.Pic500x500)) || c.a.HighPic;
       const blob = (title + ' ' + feats.map(f => f.join(' ')).join(' ')).toLowerCase();
       const use = (/gaming|gamer|jeu|game|120 ?hz|144 ?hz|165 ?hz|240 ?hz|rtx|radeon|oled|4k|8k/.test(blob) ? 20 : 0) + (/stream|capture|hdr|dolby|wi-?fi ?(6e|7)|ethernet|hdmi 2\.1|nvme|thunderbolt/.test(blob) ? 20 : 0);
-      pass.push({ score: gb + use + (c.date ? new Date(c.date).getFullYear() - 2000 : 0), id, item: { label: title.slice(0, 120) + ' (' + code + ')', brand: c.brand, mpn: code, rayon: r.id, photo: img, photoSrc: 'Icecat', factsSrc: 'https://icecat.biz', facts: { [LANG]: facts }, desc: String(desc).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 600),
+      pass.push({ score: gb + use + (c.date ? new Date(c.date).getFullYear() - 2000 : 0) + (isAcc && compat ? 5 : 0), id, item: { kind: isAcc ? 'accessory' : 'device', secondary: !!r.secondary, sold: isAcc ? 'separate' : 'main', compat: String(compat).slice(0, 120), label: title.slice(0, 120) + ' (' + code + ')', brand: c.brand, mpn: code, rayon: r.id, photo: img, photoSrc: 'Icecat', factsSrc: 'https://icecat.biz', facts: { [LANG]: facts }, desc: String(desc).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 600),
         product: { ico: r.ico, brand: c.brand, n: { [LANG]: title.slice(0, 100), en: title.slice(0, 100) }, cat: r.cat, tags: [c.brand, r.id], ref: 0 } } });
       console.log('✔ candidat', r.id, c.brand, code, gb ? gb + ' Go' : '', 'score', pass[pass.length - 1].score);
       await new Promise(z => setTimeout(z, 600));
     }
-    pass.sort((x, y) => y.score - x.score).slice(0, R.topPerRayon || 1).forEach(p => { cur.items[p.id] = p.item; kept++; console.log('★ TOP', r.id, p.item.label, '(score ' + p.score + ')'); });
+    pass.sort((x, y) => y.score - x.score).slice(0, r.accessory ? (R.topAccessories || 3) : (R.topPerRayon || 1)).forEach(p => { cur.items[p.id] = p.item; kept++; console.log('★ TOP', r.id, p.item.label, '(score ' + p.score + ')'); });
   }
   console.log('4/4 Écriture…');
   if (kept && !DRY) { cur.updated = new Date().toISOString().slice(0, 10); fs.writeFileSync(cf, JSON.stringify(cur, null, 1)); }
