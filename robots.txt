@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samuelhaihornberg.github.io/kiff-tech/sitemap.xml

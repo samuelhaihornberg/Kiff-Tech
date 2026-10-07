@@ -1,0 +1,347 @@
+{
+ "updated": "2026-10-07",
+ "items": {
+  "icb5a212f9": {
+   "label": "ASUS ROG G700 GM700TZ-R9800X204W AMD Ryzen™ 7 9800X3D 32 Go DDR5-SDRAM 2 To SSD AMD Radeon RX 9070 XT Windows 11 Home To (90PF05T1-M01250)",
+   "brand": "ASUS",
+   "mpn": "90PF05T1-M01250",
+   "rayon": "pc",
+   "photo": "https://images.icecat.biz/img/gallery/ce575b740373ce2a3ebf96228596b9c76a614271.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Fabricant de processeur : AMD",
+     "Famille de processeur : AMD Ryzen™ 7",
+     "Génération de processeurs : AMD Ryzen 9000 Series",
+     "Modèle de processeur : 9800X3D",
+     "Nombre de coeurs de processeurs : 8",
+     "Nombre de threads du processeur : 16",
+     "Fréquence du processeur Turbo : 5,2 GHz",
+     "Fréquence du processeur : 4,7 GHz",
+     "Cache L2 : 8 Mo",
+     "Cache L3 : 96 Mo"
+    ]
+   },
+   "desc": "ASUS ROG G700 GM700TZ-R9800X204W, 4,7 GHz, AMD Ryzen™ 7, 9800X3D, 32 Go, 2 To, Windows 11 Home",
+   "product": {
+    "ico": "💻",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS ROG G700 GM700TZ-R9800X204W AMD Ryzen™ 7 9800X3D 32 Go DDR5-SDRAM 2 To SSD AMD Radeon RX 9070 X",
+     "en": "ASUS ROG G700 GM700TZ-R9800X204W AMD Ryzen™ 7 9800X3D 32 Go DDR5-SDRAM 2 To SSD AMD Radeon RX 9070 X"
+    },
+    "cat": "eng",
+    "tags": [
+     "ASUS",
+     "pc"
+    ],
+    "ref": 0
+   }
+  },
+  "ic69f4abb6": {
+   "label": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\") (SM-X940NZSTEUB)",
+   "brand": "Samsung",
+   "mpn": "SM-X940NZSTEUB",
+   "rayon": "tablet",
+   "photo": "https://images.icecat.biz/img/gallery/e7586e040971036ee7331f2e7c21a9d2af4055a2.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Taille de l'écran : 37,1 cm (14.6\")",
+     "Résolution de l'écran : 2960 x 1848 pixels",
+     "Rétroéclairage à LED : Oui",
+     "Type de panneau : AMOLED",
+     "Afficher le nom du marketing technologique : Dynamic AMOLED 2X",
+     "Luminosité de l'écran : 1600 cd/m²",
+     "Nombre de couleurs affichées : 16 millions de couleurs",
+     "Nombre de coeurs de processeurs : 8",
+     "Fréquence du processeur Turbo : 4,21 GHz",
+     "Fréquence du processeur : 3,5 GHz"
+    ]
+   },
+   "desc": "Fine et légère, prête à vous suivre partout. La Galaxy Tab S12 Ultra allie un design premium épuré et un grand écran à la magie du S Pen, pour un usage idéal aussi bien pour étudier que pour la productivité au travail, où que vous emmène votre journée. Conçue dans un format fin et léger, votre Galaxy Tab se glisse partout pour vous accompagner sans effort au studio, au bureau ou lors de votre prochain voyage. Son grand écran de 14,6 pouces la transforme en véritable atelier créatif. Le S Pen inclus, apporte une précision naturelle pour donner vie à vos créations. Une charge, 23 heures d'autono",
+   "product": {
+    "ico": "📲",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\")",
+     "en": "Samsung Galaxy Tab S12 Ultra Wi-Fi (14,6\")"
+    },
+    "cat": "smart",
+    "tags": [
+     "Samsung",
+     "tablet"
+    ],
+    "ref": 0
+   }
+  },
+  "iccdf255ed": {
+   "label": "Dreame T16 Pro Heat Aspirateur traineau Batterie Sec&humide Sans sac 420 W Gris 5 Ah (HHR58A)",
+   "brand": "Dreame",
+   "mpn": "HHR58A",
+   "rayon": "home-appliance",
+   "photo": "https://images.icecat.biz/img/gallery/154545fc7854611b0d1e26767cb285aa93c90609.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Type de produit : Aspirateur traineau",
+     "Type de conteneur à poussière : Sans sac",
+     "Couleur du produit : Gris",
+     "Clean Capacité du réservoir d'eau : 0,9 L",
+     "Capacité du réservoir d'eau sale : 0,5 L",
+     "Type de nettoyage : Sec&humide",
+     "Technologie d'aspiration : Filtrage",
+     "Surface nettoyée par chargeur : 500 m²",
+     "Écran integré : Oui",
+     "Type d'écran : LED"
+    ]
+   },
+   "desc": "Dreame T16 Pro Heat, Aspirateur traineau, Sans sac, Gris, 0,9 L, 0,5 L, Sec&humide",
+   "product": {
+    "ico": "🧹",
+    "brand": "Dreame",
+    "n": {
+     "fr": "Dreame T16 Pro Heat Aspirateur traineau Batterie Sec&humide Sans sac 420 W Gris 5 Ah",
+     "en": "Dreame T16 Pro Heat Aspirateur traineau Batterie Sec&humide Sans sac 420 W Gris 5 Ah"
+    },
+    "cat": "smart",
+    "tags": [
+     "Dreame",
+     "home-appliance"
+    ],
+    "ref": 0
+   }
+  },
+  "ic7a0054ef": {
+   "label": "ASUS S701 ROG GJALLAR/CA Noir 2.1.2 canaux (90YH0460-BAAA00)",
+   "brand": "ASUS",
+   "mpn": "90YH0460-BAAA00",
+   "rayon": "watch",
+   "photo": "https://images.icecat.biz/img/gallery/cf3d580cbc0437fc6c632c1a407085bcc521a6a0.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Canaux de sortie audio : 2.1.2 canaux",
+     "Décodeurs audio intégrés : Dolby Atmos",
+     "Canal de retour audio amélioré (eARC) : Oui",
+     "Nombre de haut-parleurs : 4",
+     "Nombre de conducteurs tweeter : 2",
+     "Diamètre de haut parleur aigu (impérial) : 2,54 cm (1\")",
+     "Diamètre de haut parleur aigu : 2,7 cm",
+     "Diamètre du woofer (impérial) : 16,5 cm (6.5\")",
+     "Diamètre du woofer : 16,5 cm",
+     "Diamètre haut-parleur bande large : 5,08 cm (2\")"
+    ]
+   },
+   "desc": "ASUS S701 ROG GJALLAR/CA, 2.1.2 canaux, Dolby Atmos, 2,54 cm (1\"), 2,7 cm, 16,5 cm (6.5\"), 16,5 cm",
+   "product": {
+    "ico": "⌚",
+    "brand": "ASUS",
+    "n": {
+     "fr": "ASUS S701 ROG GJALLAR/CA Noir 2.1.2 canaux",
+     "en": "ASUS S701 ROG GJALLAR/CA Noir 2.1.2 canaux"
+    },
+    "cat": "smart",
+    "tags": [
+     "ASUS",
+     "watch"
+    ],
+    "ref": 0
+   }
+  },
+  "iccfd86417": {
+   "label": "Nintendo Switch 2 & Mario Kart World console de jeux portables 20,1 cm (7.9\") 256 Go Écran tactile Wifi Noir (10020023)",
+   "brand": "Nintendo",
+   "mpn": "10020023",
+   "rayon": "console",
+   "photo": "https://images.icecat.biz/img/gallery/e16a6c7113da6a186397b1c517f7f92677c38f9a.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Plateforme : Nintendo Switch 2",
+     "Accéléromètre : Oui",
+     "Capteur de lumière ambiante : Oui",
+     "Gyroscope : Oui",
+     "Contrôle parental : Oui",
+     "Couleur du produit : Noir",
+     "Technologie de contrôle des jeux : Analogique/Numérique",
+     "Batons Analogiques : Oui",
+     "Boutons d'épaule : Oui",
+     "Commande de volume : Boutons"
+    ]
+   },
+   "desc": "Inclut une console Nintendo Switch 2, le jeu complet Mario Kart World en téléchargement et un code pour un abonnement individuel de trois mois (90 jours) à Nintendo Switch Online. L'évolution de la Nintendo Switch est arrivée ! Donnez une nouvelle dimension à vos jeux avec un écran plus grand 1080p, ou connectez la console à un téléviseur pour profiter d'une définition allant jusqu'à 4K. La prise en charge du HDR, du VRR et de fréquences d'images allant jusqu'à 120 images par seconde vous permet de profiter de couleurs éclatantes, d'une image nette et d'une expérience de jeu fluide. Attachez l",
+   "product": {
+    "ico": "🎮",
+    "brand": "Nintendo",
+    "n": {
+     "fr": "Nintendo Switch 2 & Mario Kart World console de jeux portables 20,1 cm (7.9\") 256 Go Écran tactile W",
+     "en": "Nintendo Switch 2 & Mario Kart World console de jeux portables 20,1 cm (7.9\") 256 Go Écran tactile W"
+    },
+    "cat": "smart",
+    "tags": [
+     "Nintendo",
+     "console"
+    ],
+    "ref": 0
+   }
+  },
+  "icd985dc09": {
+   "label": "Samsung EF-DX845B Espagnole Pogo Pin Gris (EF-DX845BJEGES)",
+   "brand": "Samsung",
+   "mpn": "EF-DX845BJEGES",
+   "rayon": "office",
+   "photo": "https://images.icecat.biz/img/gallery/9efa0d37c723f8dcc38f27f59ceb084f057d5488.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Language du clavier : Espagnole",
+     "Nombre de touches du clavier : 81",
+     "Dispositif de pointage : Pavé tactile",
+     "Pavé numérique : Non",
+     "Compatibilité de marque : Samsung",
+     "Compatibilité : Galaxy Tab S12+",
+     "Couleur du produit : Gris",
+     "Couverture : Oui",
+     "Rétroéclairage : Non",
+     "Technologie de connectivité : Station d'accueil"
+    ]
+   },
+   "desc": "Samsung EF-DX845B, Espagnole, Pavé tactile, Samsung, Galaxy Tab S12+, Gris, Station d'accueil",
+   "product": {
+    "ico": "🖥️",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung EF-DX845B Espagnole Pogo Pin Gris",
+     "en": "Samsung EF-DX845B Espagnole Pogo Pin Gris"
+    },
+    "cat": "eng",
+    "tags": [
+     "Samsung",
+     "office"
+    ],
+    "ref": 0
+   }
+  },
+  "icdce82b97": {
+   "label": "Dreame Navo Care 1 Incam Caméra de sécurité IP Intérieure 2880 x 1600 pixels Plafond/Mur/Bureau (A131)",
+   "brand": "Dreame",
+   "mpn": "A131",
+   "rayon": "gadget-home",
+   "photo": "https://images.icecat.biz/img/gallery/aa0871007b3d2f2b2f7cac726eeba268835deb23.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Type : Caméra de sécurité IP",
+     "Installation prise en charge : Intérieure",
+     "Technologie de connectivité : Sans fil",
+     "suivi automatique : Oui",
+     "Assistant virtuel : Amazon Alexa & Google Assistant",
+     "mode Jour/Nuit : Oui",
+     "Type de montage : Plafond/Mur/Bureau",
+     "Couleur du produit : Blanc",
+     "Commande de panoramique de la caméra : Oui",
+     "Commande d’inclinaison de la caméra : Oui"
+    ]
+   },
+   "desc": "Dreame Navo Care 1 Incam, Caméra de sécurité IP, Intérieure, Sans fil, Amazon Alexa & Google Assistant, Plafond/Mur/Bureau, Blanc",
+   "product": {
+    "ico": "🏠",
+    "brand": "Dreame",
+    "n": {
+     "fr": "Dreame Navo Care 1 Incam Caméra de sécurité IP Intérieure 2880 x 1600 pixels Plafond/Mur/Bureau",
+     "en": "Dreame Navo Care 1 Incam Caméra de sécurité IP Intérieure 2880 x 1600 pixels Plafond/Mur/Bureau"
+    },
+    "cat": "future",
+    "tags": [
+     "Dreame",
+     "gadget-home"
+    ],
+    "ref": 0
+   }
+  },
+  "ic7f851c72": {
+   "label": "Samsung ET-LA710 Bleu, Blanc LED (ET-LA710BLEGWW)",
+   "brand": "Samsung",
+   "mpn": "ET-LA710BLEGWW",
+   "rayon": "gadget-camping",
+   "photo": "https://images.icecat.biz/img/gallery/16f99221d956801673fb11b7d9b8593b0884f6f6.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Couleur du produit : Bleu, Blanc",
+     "Produits compatibles : Samsung EB-PA710",
+     "Imperméable : Non",
+     "Type de lampe : LED",
+     "Flux lumineux : 57 lm",
+     "Température de couleur : 3900 K",
+     "Couleur de la lumière : Blanc",
+     "Source de chargement : USB",
+     "Consommation électrique typique : 0,7 W",
+     "Tension : 5 V"
+    ]
+   },
+   "desc": "Samsung ET-LA710, Bleu, Blanc, Samsung EB-PA710, LED, 57 lm, 3900 K, Blanc",
+   "product": {
+    "ico": "⛺",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung ET-LA710 Bleu, Blanc LED",
+     "en": "Samsung ET-LA710 Bleu, Blanc LED"
+    },
+    "cat": "future",
+    "tags": [
+     "Samsung",
+     "gadget-camping"
+    ],
+    "ref": 0
+   }
+  },
+  "ic4ab91421": {
+   "label": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc (SP-LFF3HLAXXZA)",
+   "brand": "Samsung",
+   "mpn": "SP-LFF3HLAXXZA",
+   "rayon": "gadget-culture",
+   "photo": "https://images.icecat.biz/img/gallery/f5700adbfa1bde1cee0489485742bdeb2f51e127.jpg",
+   "photoSrc": "Icecat",
+   "factsSrc": "https://icecat.biz",
+   "facts": {
+    "fr": [
+     "Technologie de traitement d'image : Samsung Contrast Enhancer",
+     "Projecteur intelligent : Oui",
+     "Taille d'écran compatible : 762 - 2540 mm (30 - 100\")",
+     "Luminosité du projecteur : 430 ANSI lumens",
+     "Améliorateur de contraste : Oui",
+     "Technologie de projection : DLP",
+     "Résolution native du projecteur : 1080p (1920x1080)",
+     "Taux de contraste : 100000:1",
+     "Format d'image : 16:9",
+     "Type de source lumineuse : LED"
+    ]
+   },
+   "desc": "Samsung SP-LFF3HLAX, 430 ANSI lumens, DLP, 1080p (1920x1080), 100000:1, 16:9, 762 - 2540 mm (30 - 100\")",
+   "product": {
+    "ico": "🔭",
+    "brand": "Samsung",
+    "n": {
+     "fr": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc",
+     "en": "Samsung SP-LFF3HLAX Projecteur à focale standard 430 ANSI lumens DLP 1080p (1920x1080) Blanc"
+    },
+    "cat": "future",
+    "tags": [
+     "Samsung",
+     "gadget-culture"
+    ],
+    "ref": 0
+   }
+  }
+ }
+}
