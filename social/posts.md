@@ -1,4 +1,4 @@
-# Publications prêtes (générées 2026-10-07)
+# Publications prêtes (générées 2026-10-08)
 Copie-colle sur Instagram / TikTok / Facebook / X. Rien n'est publié automatiquement.
 
 ## Xiaomi Redmi Buds 6
