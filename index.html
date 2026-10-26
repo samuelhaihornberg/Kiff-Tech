@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#03050a">
+<meta name="description" content="KiffTech — Catalogue bioluminescent dropshipping international">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KiffTech">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<title>KiffTech — Dropshipping Bioluminescent</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="bg-deep" aria-hidden="true"></div>
+<div class="bio-particles" id="bioParticles" aria-hidden="true"></div>
+
+<header class="top-bar" role="banner">
+  <div class="bar-left">
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00ffc8"/><stop offset="100%" stop-color="#0066ff"/></linearGradient></defs><path fill="url(#logoGrad)" d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 2.5L26 10v12l-10 5-10-5V10L16 4.5z"/></svg>
+    <span class="app-name">KiffTech</span>
+  </div>
+  <div class="bar-center">
+    <nav class="main-tabs" id="mainTabs" role="tablist" aria-label="Sections"></nav>
+  </div>
+  <div class="bar-right">
+    <button class="icon-btn" id="searchBtn" aria-label="Rechercher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+    <button class="icon-btn" id="cartBtn" aria-label="Panier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count" id="cartCount" aria-live="polite">0</span></button>
+    <button class="icon-btn" id="userBtn" aria-label="Compte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+  </div>
+</header>
+
+<main class="main-content" id="mainContent" role="main">
+  <section class="panel" id="panel-catalog" role="tabpanel" aria-labelledby="tab-catalog">
+    <div class="panel-header">
+      <h2>Catalogue</h2>
+      <div class="filter-bar">
+        <select id="categoryFilter" aria-label="Filtrer par catégorie"><option value="">Toutes catégories</option></select>
+        <select id="supplierFilter" aria-label="Filtrer par fournisseur"><option value="">Tous fournisseurs</option></select>
+        <input type="search" id="searchInput" placeholder="Rechercher produits..." aria-label="Recherche">
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid" role="list"></div>
+    <div class="load-more" id="loadMore" hidden><button type="button" class="btn-primary">Charger plus</button></div>
+  </section>
+
+  <section class="panel" id="panel-product" role="tabpanel" aria-labelledby="tab-product" hidden>
+    <div class="product-detail" id="productDetail"></div>
+  </section>
+
+  <section class="panel" id="panel-subscriptions" role="tabpanel" aria-labelledby="tab-subscriptions">
+    <div class="subscriptions-layout">
+      <article class="sub-card" data-tier="basic">
+        <div class="sub-glow"></div>
+        <header class="sub-header">
+          <span class="sub-badge">ESSENTIEL</span>
+          <h3>KiffTech Basic</h3>
+          <p class="sub-desc">Accès catalogue complet, prix de référence, alertes stock</p>
+        </header>
+        <div class="sub-price"><span class="amount">1<span class="currency">€</span></span><span class="period">/semaine</span></div>
+        <ul class="sub-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Catalogue 5000+ produits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Prix de référence vérifiés</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Alertes stock email</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Import CSV manuel</li>
+        </ul>
+        <button class="btn-subscribe" data-tier="basic">S'abonner</button>
+        <p class="sub-note">Sans engagement, annulable à tout moment</p>
+      </article>
+
+      <article class="sub-card featured" data-tier="tresor">
+        <div class="sub-glow"></div>
+        <div class="sub-ribbon">TRÉSOR</div>
+        <header class="sub-header">
+          <span class="sub-badge">PREMIUM</span>
+          <h3>KiffTech Trésor</h3>
+          <p class="sub-desc">Automatisation complète, remises maximales, API prioritaire</p>
+        </header>
+        <div class="sub-price"><span class="amount">3,35<span class="currency">€</span></span><span class="period">/semaine</span></div>
+        <ul class="sub-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Tout le Basic +</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Import auto planifié (cron)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Remises configurables 5-25%</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> API REST + Webhooks</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Sync fournisseurs temps réel</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Rapports marge/ROI</li>
+        </ul>
+        <button class="btn-subscribe btn-featured" data-tier="tresor">Activer Trésor</button>
+        <p class="sub-note">Économisez jusqu'à 25% sur chaque commande</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-import" role="tabpanel" aria-labelledby="tab-import">
+    <div class="import-layout">
+      <article class="import-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg> Import Fournisseurs</h3>
+        <p class="import-desc">Configurez l'import automatisé depuis vos fournisseurs (CSV, XML, JSON, API).</p>
+        <div class="import-sources" id="importSources"></div>
+        <button class="btn-secondary" id="addSourceBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Ajouter source</button>
+      </article>
+      <article class="import-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg> Planification (Trésor)</h3>
+        <p class="import-desc">Disponible avec l'abonnement Trésor. Créez des tâches cron pour l'import automatique.</p>
+        <div class="schedule-list" id="scheduleList"></div>
+        <button class="btn-secondary" id="addScheduleBtn" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Nouvelle tâche</button>
+      </article>
+      <article class="import-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Mappings & Transformations</h3>
+        <p class="import-desc">Définissez comment mapper les champs fournisseurs vers votre catalogue.</p>
+        <div class="mappings-table" id="mappingsTable"></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-settings" role="tabpanel" aria-labelledby="tab-settings">
+    <div class="settings-layout">
+      <article class="settings-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Remises & Prix</h3>
+        <div class="setting-group">
+          <label>Remise fournisseur globale</label>
+          <div class="slider-row"><input type="range" id="globalDiscount" min="0" max="30" value="10" step="1"><span id="globalDiscountVal">10%</span></div>
+        </div>
+        <div class="setting-group">
+          <label>Marge cible par défaut</label>
+          <div class="slider-row"><input type="range" id="targetMargin" min="10" max="100" value="35" step="5"><span id="targetMarginVal">35%</span></div>
+        </div>
+        <div class="setting-group">
+          <label><input type="checkbox" id="autoPriceUpdate" checked> Mise à jour auto prix référence</label>
+        </div>
+        <div class="setting-group">
+          <label><input type="checkbox" id="verifyRefPrice" checked> Vérifier prix référence (API publiques)</label>
+        </div>
+      </article>
+      <article class="settings-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Abonnement actuel</h3>
+        <div class="current-sub" id="currentSub">Aucun abonnement actif</div>
+        <div class="sub-actions" id="subActions"></div>
+      </article>
+      <article class="settings-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> Données & Export</h3>
+        <div class="btn-group">
+          <button class="btn-secondary" id="exportCSV">Exporter catalogue (CSV)</button>
+          <button class="btn-secondary" id="exportJSON">Exporter catalogue (JSON)</button>
+          <button class="btn-secondary" id="importCSV">Importer CSV</button>
+        </div>
+        <input type="file" id="csvImportInput" accept=".csv" hidden>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="bottom-bar" role="contentinfo">
+  <nav class="bottom-tabs" id="bottomTabs" aria-label="Navigation principale"></nav>
+</footer>
+
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+<div id="splash" aria-hidden="true">
+  <svg class="splash-logo" viewBox="0 0 32 32"><defs><linearGradient id="splashGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00ffc8"/><stop offset="100%" stop-color="#0066ff"/></linearGradient></defs><path fill="url(#splashGrad)" d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 2.5L26 10v12l-10 5-10-5V10L16 4.5z"/></svg>
+  <div class="splash-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="splash-bar" id="splashBar"></div></div>
+  <span class="splash-text" id="splashText">Initialisation…</span>
+</div>
+
+<noscript><div class="noscript">JavaScript requis pour KiffTech</div></noscript>
+
+<script type="module" src="./app.js"></script>
+<script src="./install.js"></script>
+</body>
+</html>
