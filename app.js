@@ -1,22 +1,24 @@
 /* ===== KiffTech — Catalogue Smart Devices & Gadgets ===== */
 
-// ---------- RAYONS (Catégories visuelles) ----------
+// ---------- RAYONS (Catégories de produits) ----------
 const RAYONS = [
-  { id: 'smartphones', label: 'Smartphones et accessoires', icon: '📱', color: '#00d4ff', desc: 'Téléphones, coques, protections écran, accessoires' },
-  { id: 'montres', label: 'Montres connectées', icon: '⌚', color: '#00ff88', desc: 'Smartwatches, trackers fitness, bracelets santé' },
-  { id: 'audio', label: 'Écouteurs, casques et enceintes', icon: '🎧', color: '#ff2d95', desc: 'True wireless, casques ANC, enceintes portables' },
-  { id: 'maison', label: 'Maison connectée', icon: '🏠', color: '#ff6b00', desc: 'Ampoules, prises, capteurs, hubs, assistants vocaux' },
-  { id: 'securite', label: 'Caméras et sécurité', icon: '🔒', color: '#b84dff', desc: 'Caméras IP, sonnettes vidéo, alarmes, serrures' },
-  { id: 'gaming', label: 'Gaming et gadgets gaming', icon: '🎮', color: '#ff6b00', desc: 'Manettes, claviers, souris, casques, accessoires' },
-  { id: 'robots', label: 'Robots et assistants intelligents', icon: '🤖', color: '#00ffc8', desc: 'Aspirateurs, tondeuses, assistants IA, robots éducatifs' },
-  { id: 'drones', label: 'Drones et gadgets télécommandés', icon: '🚁', color: '#ffd23f', desc: 'Drones caméra, FPV, voitures, bateaux RC' },
-  { id: 'informatique', label: 'Informatique et accessoires', icon: '💻', color: '#0066ff', desc: 'Claviers, souris, hubs, docks, écrans, stockage' },
-  { id: 'energie', label: 'Chargeurs, batteries et énergie portable', icon: '🔋', color: '#00ff88', desc: 'Powerbanks, chargeurs GaN, stations, solaire portable' },
-  { id: 'auto', label: 'Gadgets automobiles', icon: '🚗', color: '#ff6b00', desc: 'Chargeurs, caméras, purificateurs, accessoires voiture' },
-  { id: 'vr', label: 'Réalité virtuelle et augmentée', icon: '🥽', color: '#b84dff', desc: 'Casques VR, lunettes AR, contrôleurs, accessoires' }
+  { id: 'smartphones', label: 'Smartphones', icon: '📱', color: '#00d4ff', desc: 'Smartphones et accessoires' },
+  { id: 'montres', label: 'Montres connectées', icon: '⌚', color: '#00ff88', desc: 'Smartwatches et trackers fitness' },
+  { id: 'audio', label: 'Audio', icon: '🎧', color: '#ff2d95', desc: 'Écouteurs, casques et enceintes' },
+  { id: 'maison', label: 'Maison connectée', icon: '🏠', color: '#ff6b00', desc: 'Objets connectés pour la maison' },
+  { id: 'securite', label: 'Sécurité', icon: '🔒', color: '#b84dff', desc: 'Caméras, alarmes et serrures connectées' },
+  { id: 'gaming', label: 'Gaming', icon: '🎮', color: '#ff6b00', desc: 'Accessoires et périphériques gaming' },
+  { id: 'robots', label: 'Robots', icon: '🤖', color: '#00ffc8', desc: 'Robots aspirateurs et assistants' },
+  { id: 'drones', label: 'Drones', icon: '🚁', color: '#ffd23f', desc: 'Drones et gadgets télécommandés' },
+  { id: 'informatique', label: 'Informatique', icon: '💻', color: '#0066ff', desc: 'Claviers, souris, hubs et écrans' },
+  { id: 'energie', label: 'Énergie', icon: '🔋', color: '#00ff88', desc: 'Chargeurs, batteries et énergie portable' },
+  { id: 'auto', label: 'Auto', icon: '🚗', color: '#ff6b00', desc: 'Gadgets et accessoires auto' },
+  { id: 'vr', label: 'Réalité Virtuelle', icon: '🥽', color: '#b84dff', desc: 'Casques VR et lunettes AR' }
 ];
 
-// ---------- MARQUES PAR RAYON ----------
+const RAYONS_MAP = Object.fromEntries(RAYONS.map(r => [r.id, r]));
+
+// ---------- MARQUES PAR RAYON (mélangées) ----------
 const BRANDS_BY_RAYON = {
   smartphones: ['Samsung', 'Xiaomi', 'Apple', 'Google', 'OnePlus', 'Nothing', 'Motorola', 'OPPO', 'Realme', 'POCO'],
   montres: ['Apple', 'Samsung', 'Garmin', 'Xiaomi', 'Huawei', 'Amazfit', 'Withings', 'Fossil', 'Mobvoi'],
@@ -115,7 +117,7 @@ function generateProductsForRayon(rayonId, count = 8) {
     ]
   };
 
-  const rayTemplates = templates[rayonId] || [{ prefix: 'Produit', suffix: ['1', '2', '3'], brand: brands[0] }];
+  const rayTemplates = templates[rayonId] || [{ prefix: 'Produit', suffix: ['1', '2', '3'], brand: 'Generic' }];
   
   for (let i = 0; i < count; i++) {
     const template = rayTemplates[i % rayTemplates.length];
@@ -124,25 +126,36 @@ function generateProductsForRayon(rayonId, count = 8) {
     const title = `${brand} ${template.prefix} ${suffix}`;
     
     const basePrice = Math.round((30 + Math.random() * 800) * 100) / 100;
-    const refPrice = Math.round(basePrice * (1.1 + Math.random() * 0.3) * 100) / 100;
-    const discount = Math.round((1 - basePrice / refPrice) * 100);
+    const officialPrice = Math.round(basePrice * (1.15 + Math.random() * 0.25) * 100) / 100;
+    const promoPercent = 10 + Math.floor(Math.random() * 11);
+    const promoPrice = Math.round(officialPrice * (1 - promoPercent / 100) * 100) / 100;
     const stock = Math.random() > 0.1 ? Math.floor(Math.random() * 200) : 0;
+    
+    const rayon = RAYONS.find(r => r.id === rayonId);
     
     products.push({
       id: `KT-${rayonId.toUpperCase()}-${String(i+1).padStart(3,'0')}`,
       title,
       category: rayonId,
       brand,
-      supplier: 'demo',
-      supplierName: 'KiffTech Demo',
-      price: basePrice,
-      refPrice,
-      discount,
+      supplier: 'kifftech',
+      supplierName: 'KiffTech Official',
+      price: promoPrice,
+      officialPrice,
+      promoPercent,
       stock,
-      image: `https://picsum.photos/seed/${encodeURIComponent(brand + title + i)}/400/400.jpg`,
+      images: [
+        `https://picsum.photos/seed/${encodeURIComponent(brand + title + i + 'a')}/600/600.jpg`,
+        `https://picsum.photos/seed/${encodeURIComponent(brand + title + i + 'b')}/600/600.jpg`,
+        `https://picsum.photos/seed/${encodeURIComponent(brand + title + i + 'c')}/600/600.jpg`,
+        `https://picsum.photos/seed/${encodeURIComponent(brand + title + i + 'd')}/600/600.jpg`
+      ],
+      videoUrl: `https://cdn.pixabay.com/video/2023/01/01/00-00-00-${Math.floor(Math.random()*1000).toString().padStart(4,'0')}_medium.mp4`,
       specs: generateSpecs(rayonId, brand),
-      tags: discount > 20 ? ['promo'] : stock === 0 ? ['rupture'] : i < 2 ? ['nouveau'] : [],
-      description: `${title} — ${RAYONS.find(r => r.id === rayonId)?.desc || 'Produit tech'}. Prix compétitif, livraison rapide.`
+      tags: promoPercent >= 15 ? ['promo'] : stock === 0 ? ['rupture'] : i < 2 ? ['nouveau'] : [],
+      description: `${title} — ${rayon?.desc || 'Produit tech'}. Prix officiel barré, promotion ${promoPercent}%.`,
+      reference: `REF-${rayonId.toUpperCase()}-${String(Math.floor(Math.random()*10000)).padStart(4,'0')}`,
+      gtin: String(Math.floor(Math.random()*1e13)).padStart(13,'0')
     });
   }
   return products;
@@ -227,7 +240,7 @@ function generateSpecs(rayonId, brand) {
   return baseSpecs;
 }
 
-// Générer tous les produits
+// Générer tous les produits (fallback)
 let DEMO_PRODUCTS = [];
 RAYONS.forEach(rayon => {
   DEMO_PRODUCTS = DEMO_PRODUCTS.concat(generateProductsForRayon(rayon.id, 8));
@@ -235,6 +248,8 @@ RAYONS.forEach(rayon => {
 
 // Mélanger pour variété
 DEMO_PRODUCTS = DEMO_PRODUCTS.sort(() => Math.random() - 0.5);
+
+const FALLBACK_PRODUCTS = DEMO_PRODUCTS;
 
 // ---------- UTILITIES ----------
 function sanitizeHTML(str){const div=document.createElement('div');div.textContent=str;return div.innerHTML;}
@@ -245,6 +260,7 @@ function debounce(fn,ms){let t;return(...args)=>{clearTimeout(t);t=setTimeout(()
 // ---------- STATE ----------
 const state = {
   products: DEMO_PRODUCTS,
+  productsMap: new Map(),
   filteredProducts: [],
   currentRayon: null,
   currentCategory: '',
@@ -255,12 +271,7 @@ const state = {
   currentTab: 'catalog',
   subscription: null,
   sortBy: 'featured',
-  importSources: [
-    {id:'techdata',name:'TechData Europe',type:'api',status:'active',cron:'0 6 * * *',enabled:true,mapping:{sku:'SKU',title:'ProductName',price:'Price',stock:'Qty',category:'Category'}},
-    {id:'ingram',name:'Ingram Micro',type:'csv',status:'active',cron:'0 7 * * *',enabled:true,mapping:{sku:'ItemID',title:'Description',price:'Cost',stock:'Available',category:'Cat'}},
-    {id:'also',name:'ALSO Holding',type:'xml',status:'paused',cron:'',enabled:false,mapping:{}},
-    {id:'tdsynnex',name:'TD SYNNEX',type:'api',status:'active',cron:'0 5 * * *',enabled:true,mapping:{sku:'PartNumber',title:'Name',price:'DealerPrice',stock:'StockLevel',category:'Group'}},
-  ],
+  importSources: [],
   schedules: [],
   mappings: {globalDiscount:10,targetMargin:35,autoPriceUpdate:true,verifyRefPrice:true},
   cart: [],
@@ -270,18 +281,12 @@ const state = {
 // ---------- MAIN CLASS ----------
 class KiffTech{
   constructor(){
-    this.tabs = ['catalog','product','subscriptions','import','settings'];
-    this.tabLabels = {catalog:'Catalogue',product:'Produit',subscriptions:'Abonnements',import:'Import',settings:'Réglages'};
+    this.tabs = ['catalog'];
+    this.tabLabels = {catalog:'Catalogue'};
     this.tabIcons = {
-      catalog:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/><line x1="4" y1="6" x2="4" y2="18"/><line x1="20" y1="6" x2="20" y2="18"/></svg>',
-      product:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9"/><path d="M11 7v10"/><path d="M18 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8"/></svg>',
-      subscriptions:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
-      import:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>',
-      settings:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06-.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l-.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06-.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>'
+      catalog:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/><line x1="4" y1="6" x2="4" y2="18"/><line x1="20" y1="6" x2="20" y2="18"/></svg>'
     };
 
-    this.mainTabs = document.getElementById('mainTabs');
-    this.bottomTabs = document.getElementById('bottomTabs');
     this.productsGrid = document.getElementById('productsGrid');
     this.loadMore = document.getElementById('loadMore');
     this.categoryFilter = document.getElementById('categoryFilter');
@@ -289,23 +294,6 @@ class KiffTech{
     this.searchInput = document.getElementById('searchInput');
     this.productDetail = document.getElementById('productDetail');
     this.cartCount = document.getElementById('cartCount');
-    this.importSources = document.getElementById('importSources');
-    this.scheduleList = document.getElementById('scheduleList');
-    this.mappingsTable = document.getElementById('mappingsTable');
-    this.currentSub = document.getElementById('currentSub');
-    this.subActions = document.getElementById('subActions');
-    this.globalDiscount = document.getElementById('globalDiscount');
-    this.globalDiscountVal = document.getElementById('globalDiscountVal');
-    this.targetMargin = document.getElementById('targetMargin');
-    this.targetMarginVal = document.getElementById('targetMarginVal');
-    this.autoPriceUpdate = document.getElementById('autoPriceUpdate');
-    this.verifyRefPrice = document.getElementById('verifyRefPrice');
-    this.exportCSV = document.getElementById('exportCSV');
-    this.exportJSON = document.getElementById('exportJSON');
-    this.importCSV = document.getElementById('importCSV');
-    this.csvImportInput = document.getElementById('csvImportInput');
-    this.addSourceBtn = document.getElementById('addSourceBtn');
-    this.addScheduleBtn = document.getElementById('addScheduleBtn');
     this.modal = document.getElementById('productModal');
     this.modalBody = document.getElementById('modalBody');
     this.toastContainer = document.getElementById('toastContainer');
@@ -315,6 +303,7 @@ class KiffTech{
     this.currentRayon = null;
     this.currentRayonProducts = [];
     this.rayonSort = 'featured';
+    this.rayonBrandFilter = '';
 
     this.init();
   }
@@ -325,55 +314,76 @@ class KiffTech{
     this.bindEvents();
     this.populateFilters();
     this.applyFilters();
-    this.renderImportSources();
-    this.renderSchedules();
-    this.renderMappings();
-    this.updateSubscriptionUI();
     this.initBioParticles();
     this.registerSW();
     this.setupInstallPrompt();
+    this.bindCartEvents();
+
+    this.loadProducts();
 
     if(document.readyState==='complete') this.onLoaded();
     else window.addEventListener('load',()=>this.onLoaded());
+  }
+
+  async loadProducts() {
+    this.setProgress(30, 'Chargement catalogue…');
+    
+    const cached = getCachedProducts();
+    if (cached) {
+      state.products = cached;
+      this.buildProductsMap();
+      this.setProgress(80, 'Catalogue chargé (cache)');
+      this.applyFilters();
+      return;
+    }
+
+    this.setProgress(50, 'Synchronisation…');
+    try {
+      const products = await productAgent.syncAllProducts();
+      state.products = products;
+      this.buildProductsMap();
+      setCachedProducts(products);
+      this.setProgress(80, 'Catalogue synchronisé');
+      this.applyFilters();
+    } catch (err) {
+      console.warn('[KiffTech] Erreur sync, fallback:', err.message);
+      state.products = FALLBACK_PRODUCTS;
+      this.buildProductsMap();
+      this.applyFilters();
+    }
+    
+    this.setProgress(100, 'Prêt');
+  }
+
+  buildProductsMap() {
+    state.productsMap = new Map();
+    state.products.forEach(p => state.productsMap.set(p.id, p));
   }
 
   onLoaded(){
     this.animateProgress(100,'Prêt',()=>{this.hideSplash();});
   }
 
-  // ---------- PROGRESS ----------
   setProgress(pct,text){this.splashBar.style.width=pct+'%';this.splashText.textContent=text;}
   animateProgress(target,text,cb){let cur=parseInt(this.splashBar.style.width)||0;const step=()=>{if(cur<target){cur=Math.min(target,cur+3);this.setProgress(cur,text);requestAnimationFrame(()=>setTimeout(step,20));}else if(cb)cb();};step();}
   hideSplash(){document.getElementById('splash').classList.add('hidden');}
 
-  // ---------- TABS ----------
   buildTabs(){
     const tabsHTML=this.tabs.map((t,i)=>`<button class="main-tab" role="tab" aria-selected="${i===0}" data-tab="${t}">${this.tabLabels[t]}</button>`).join('');
     this.mainTabs.innerHTML=tabsHTML;
     this.mainTabs.querySelectorAll('.main-tab').forEach(btn=>btn.addEventListener('click',()=>this.switchTab(btn.dataset.tab)));
-
-    const bottomHTML=this.tabs.map((t,i)=>`<button class="bottom-tab" role="tab" aria-selected="${i===0}" data-tab="${t}">${this.tabIcons[t]}<span>${this.tabLabels[t]}</span></button>`).join('');
-    this.bottomTabs.innerHTML=bottomHTML;
-    this.bottomTabs.querySelectorAll('.bottom-tab').forEach(btn=>btn.addEventListener('click',()=>this.switchTab(btn.dataset.tab)));
   }
 
   switchTab(tab){
-    if(tab==='product' && !state.currentProduct){this.showToast('Sélectionnez un produit','error');return;}
     state.currentTab=tab;
     document.querySelectorAll('.panel').forEach(p=>p.hidden=true);
     document.getElementById(`panel-${tab}`).hidden=false;
     document.querySelectorAll('[role="tab"]').forEach(btn=>{btn.setAttribute('aria-selected',btn.dataset.tab===tab);});
-    if(tab==='product') this.renderProductDetail();
-    if(tab==='import' && state.subscription!=='tresor') this.addScheduleBtn.disabled=true;
-    else this.addScheduleBtn.disabled=false;
-    if(tab==='catalog' && this.currentRayon) this.renderRayonProducts();
   }
 
-  // ---------- FILTRES ----------
   populateFilters(){
-    // Catégories = rayons
     this.categoryFilter.innerHTML = '<option value="">Tous les rayons</option>' + RAYONS.map(r=>`<option value="${r.id}">${r.label}</option>`).join('');
-    this.supplierFilter.innerHTML = '<option value="">Tous fournisseurs</option>' + [...new Set(state.products.map(p=>p.supplierName))].map(s=>`<option value="${s}">${s}</option>`).join('');
+    this.supplierFilter.innerHTML = '<option value="">Tous fournisseurs</option>';
   }
 
   applyFilters=debounce(()=>{
@@ -384,39 +394,50 @@ class KiffTech{
 
     let baseProducts = state.products;
     
-    // Filtrer par rayon si sélectionné
     if(this.currentRayon){
       baseProducts = baseProducts.filter(p => p.category === this.currentRayon);
     } else if(state.currentCategory){
       baseProducts = baseProducts.filter(p => p.category === state.currentCategory);
     }
     
+    if(this.rayonBrandFilter) baseProducts = baseProducts.filter(p => p.brand === this.rayonBrandFilter);
     if(state.currentSupplier) baseProducts = baseProducts.filter(p => p.supplierName === state.currentSupplier);
     if(state.currentSearch) baseProducts = baseProducts.filter(p => p.title.toLowerCase().includes(state.currentSearch) || p.description.toLowerCase().includes(state.currentSearch) || p.brand.toLowerCase().includes(state.currentSearch));
 
     state.filteredProducts = baseProducts;
+    
+    if(this.currentRayon){
+      this.currentRayonProducts = baseProducts;
+      this.sortRayonProducts();
+      baseProducts = this.currentRayonProducts;
+    }
+    
+    state.visibleCount = 24;
     this.renderProducts();
   },150);
 
   renderProducts(){
-    const toShow = state.filteredProducts.slice(0, state.visibleCount);
     const grid = this.productsGrid;
     
     if(this.currentRayon){
-      // Mode rayon : affichage cartes produits
-      grid.innerHTML = toShow.map(p => this.productCardHTML(p)).join('');
+      const toShow = this.currentRayonProducts.slice(0, state.visibleCount);
+      grid.innerHTML = toShow.map(p => this.catalogProductHTML(p)).join('');
     } else {
-      // Mode catalogue : afficher les rayons
       grid.innerHTML = RAYONS.map(r => this.rayonCardHTML(r)).join('');
       this.bindRayonCards();
     }
     
     this.loadMore.hidden = state.visibleCount >= state.filteredProducts.length;
 
-    grid.querySelectorAll('.product-card').forEach(card=>{
-      card.addEventListener('click',()=>this.openProduct(card.dataset.id));
-      const btn = card.querySelector('.product-action');
-      if(btn) btn.addEventListener('click',(e)=>{e.stopPropagation();this.addToCart(card.dataset.id);});
+    grid.querySelectorAll('.catalog-product').forEach(card=>{
+      card.addEventListener('click',(e)=>{
+        if(e.target.closest('a, button')) return;
+        this.openProduct(card.dataset.id);
+      });
+      const btn = card.querySelector('.btn-catalog:not(.secondary)');
+      if(btn) btn.addEventListener('click',(e)=>{e.stopPropagation();e.preventDefault();this.openProductLink(card.dataset.id);});
+      const btnDetail = card.querySelector('.btn-catalog.secondary');
+      if(btnDetail) btnDetail.addEventListener('click',(e)=>{e.stopPropagation();this.openProduct(card.dataset.id);});
     });
   }
 
@@ -432,7 +453,7 @@ class KiffTech{
           <span class="rayon-count">${count} produit${count>1?'s':''}</span>
           ${!hasProducts ? '<span class="rayon-empty">Bientôt disponible</span>' : ''}
         </div>
-        <button class="rayon-btn" type="button" aria-label="Voir ${r.label}">Explorer</button>
+        <button class="rayon-btn" type="button" aria-label="Voir ${r.label}">Explorer le rayon</button>
       </article>
     `;
   }
@@ -446,12 +467,12 @@ class KiffTech{
   openRayon(rayonId){
     this.currentRayon = rayonId;
     this.currentRayonProducts = state.products.filter(p => p.category === rayonId);
-    this.applyFilters(); // This will render products for this rayon
+    this.applyFilters();
     this.showRayonHeader(rayonId);
   }
 
   showRayonHeader(rayonId){
-    const rayon = RAYONS.find(r => r.id === rayonId);
+    const rayon = RAYONS_MAP[rayonId];
     if(!rayon) return;
     
     const header = this.productsGrid.parentElement.querySelector('.panel-header');
@@ -460,6 +481,7 @@ class KiffTech{
         <div class="rayon-header" style="--rayon-color:${rayon.color};">
           <button class="btn-back" onclick="window.keffTech.closeRayon()" aria-label="Retour au catalogue">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>CATALOGUES</span>
           </button>
           <div class="rayon-header-info">
             <span class="rayon-header-icon" style="background:${rayon.color}20;color:${rayon.color};">${rayon.icon}</span>
@@ -478,7 +500,7 @@ class KiffTech{
             </select>
             <select id="rayonBrandFilter" onchange="window.keffTech.setRayonBrandFilter(this.value)" style="padding:.4rem .75rem;font-size:.75rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--fg);min-width:140px;">
               <option value="">Toutes marques</option>
-              ${BRANDS_BY_RAYON[this.currentRayon]?.map(b=>`<option value="${b}">${b}</option>`).join('') || ''}
+              ${RAYONS_MAP[this.currentRayon]?.brands?.map(b=>`<option value="${b}">${b}</option>`).join('') || ''}
             </select>
           </div>
         `;
@@ -488,14 +510,12 @@ class KiffTech{
   closeRayon(){
     this.currentRayon = null;
     this.currentRayonProducts = [];
-    this.applyFilters(); // Returns to rayons view
+    this.applyFilters();
     const header = this.productsGrid.parentElement.querySelector('.panel-header');
     if(header){
       header.innerHTML = `
-        <h2>Catalogue</h2>
+        <h2>CATALOGUES</h2>
         <div class="filter-bar">
-          <select id="categoryFilter" aria-label="Filtrer par rayon"><option value="">Tous les rayons</option></select>
-          <select id="supplierFilter" aria-label="Filtrer par fournisseur"><option value="">Tous fournisseurs</option></select>
           <input type="search" id="searchInput" placeholder="Rechercher produits..." aria-label="Recherche">
         </div>
       `;
@@ -521,13 +541,17 @@ class KiffTech{
       case 'price-asc': this.currentRayonProducts.sort((a,b)=>a.price-b.price); break;
       case 'price-desc': this.currentRayonProducts.sort((a,b)=>b.price-a.price); break;
       case 'newest': this.currentRayonProducts.sort((a,b)=>b.id.localeCompare(a.id)); break;
-      case 'discount': this.currentRayonProducts.sort((a,b)=>b.discount-a.discount); break;
+      case 'discount': this.currentRayonProducts.sort((a,b)=>b.promoPercent-a.promoPercent); break;
       default: break;
     }
   }
 
-  // Override applyFilters to handle rayon-specific filtering
-  applyFilters(){
+  applyFilters=debounce(()=>{
+    state.currentCategory=this.categoryFilter.value;
+    state.currentSupplier=this.supplierFilter.value;
+    state.currentSearch=this.searchInput.value.toLowerCase();
+    state.visibleCount=24;
+
     let baseProducts = state.products;
     
     if(this.currentRayon){
@@ -550,30 +574,40 @@ class KiffTech{
     
     state.visibleCount = 24;
     this.renderProducts();
-  }
+  },150);
 
-  // ---------- PRODUCT CARD ----------
-  productCardHTML(p){
-    const badge = p.tags.includes('nouveau') ? '<span class="product-badge badge-new">Nouveau</span>' : 
-                  p.tags.includes('promo') ? '<span class="product-badge badge-promo">Promo</span>' : 
-                  p.tags.includes('rupture') ? '<span class="product-badge badge-stock">Rupture</span>' : '';
-    const ref = formatPrice(p.refPrice);
-    const disc = formatDiscount(p.discount);
-    return `<article class="product-card" data-id="${p.id}" role="listitem">
-      <div class="product-thumb" style="background-image:url('${p.image}')">${badge}</div>
-      <div class="product-info">
-        <h3 class="product-title">${sanitizeHTML(p.title)}</h3>
-        <div class="product-meta">
-          <span class="product-brand" style="background:${this.getBrandColor(p.brand)}20;color:${this.getBrandColor(p.brand)};border-color:${this.getBrandColor(p.brand)}40;">${sanitizeHTML(p.brand)}</span>
-          ${p.category !== this.currentRayon ? `<span class="product-category">${sanitizeHTML(RAYONS.find(r=>r.id===p.category)?.label||p.category)}</span>` : ''}
+  catalogProductHTML(p){
+    const color = RAYONS_MAP[p.category]?.color || '#00ffc8';
+    const verified = p.supplier === 'clickwise' || p.supplier === 'kifftech';
+    return `
+      <article class="catalog-product" data-id="${p.id}" style="--rayon-color:${p.category ? RAYONS_MAP[p.category]?.color || '#00ffc8' : '#00ffc8'};">
+        <div class="product-thumb" style="background-image:url('${p.images?.[0] || `https://picsum.photos/seed/${encodeURIComponent(p.title)}/600/600.jpg`}')" aria-hidden="true">
+          ${p.supplier === 'clickwise' ? '<span class="verified-badge">✓ Vérifié</span>' : ''}
+          ${p.promoPercent >= 15 ? `<span class="promo-badge">${p.promoPercent}%</span>` : ''}
+          ${p.stock === 0 ? '<span class="rupture-badge">Rupture</span>' : ''}
         </div>
-        <div class="product-price-row">
-          <span class="product-price">${formatPrice(p.price)}</span>
-          ${p.refPrice>p.price?`<span class="product-ref-price">${formatPrice(p.refPrice)}</span><span class="product-discount">${formatDiscount(p.discount)}</span>`:''}
+        <div class="product-info">
+          <div class="product-meta">
+            <span class="product-brand" style="background:${this.getBrandColor(p.brand)}20;color:${this.getBrandColor(p.brand)};border-color:${this.getBrandColor(p.brand)}40;">${sanitizeHTML(p.brand)}</span>
+            <span class="product-category">${sanitizeHTML(p.category)}</span>
+            ${p.reference ? `<span class="product-ref">${sanitizeHTML(p.reference)}</span>` : ''}
+          </div>
+          <h3 class="product-title">${sanitizeHTML(p.title)}</h3>
+          <div class="product-price-row">
+            <span class="product-price">${formatPrice(p.price)}</span>
+            <span class="product-official-price">${formatPrice(p.officialPrice)}</span>
+            <span class="product-discount">${p.promoPercent}%</span>
+          </div>
+          <div class="product-actions">
+            <a href="${sanitizeHTML(p.clickwiseTrackingUrl || '#')}" target="_blank" rel="noopener" class="btn-catalog" style="flex:1;padding:.5rem;font-size:.7rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--blue));color:#03050a;border:none;border-radius:var(--radius-sm);text-align:center;text-decoration:none;min-height:36px;">Voir le produit</a>
+            <button class="btn-catalog secondary" onclick="window.keffTech.openProduct('${p.id}')" style="padding:.5rem .75rem;font-size:.7rem;background:var(--glass);color:var(--fg);border:1px solid var(--border);border-radius:var(--radius-sm);min-height:36px;">Détails</button>
+          </div>
+          <div class="product-meta" style="margin-top:.5rem;font-size:.6rem;color:var(--fg-muted);display:flex;gap:1rem;flex-wrap:wrap;">
+            ${p.reference ? `<span>Réf: ${sanitizeHTML(p.reference)}</span>` : ''}
+            ${p.gtin ? `<span>GTIN: ${sanitizeHTML(p.gtin)}</span>` : ''}
+          </div>
         </div>
-        <button class="product-action" type="button" ${p.stock===0?'disabled':''}>${p.stock===0?'Rupture':'Voir le produit'}</button>
-      </div>
-    </article>`;
+      </article>`;
   }
 
   getBrandColor(brand){
@@ -602,41 +636,68 @@ class KiffTech{
     this.renderProducts();
   }
 
-  // ---------- PRODUCT DETAIL ----------
   openProduct(id){
     state.currentProduct = state.products.find(p => p.id === id);
     if(state.currentProduct) this.switchTab('product');
   }
 
+  openProductLink(id){
+    const p = state.products.find(p => p.id === id);
+    if (p && p.clickwiseTrackingUrl) {
+      window.open(p.clickwiseTrackingUrl, '_blank', 'noopener');
+    } else if (p && p.affiliateUrl) {
+      window.open(p.affiliateUrl, '_blank', 'noopener');
+    }
+  }
+
   renderProductDetail(){
     if(!state.currentProduct){this.productDetail.innerHTML='<p class="empty">Aucun produit sélectionné</p>';return;}
     const p = state.currentProduct;
-    const specsHTML = Object.entries(p.specs).map(([k,v])=>`<div class="spec-item"><div class="spec-label">${sanitizeHTML(k)}</div><div class="spec-value">${sanitizeHTML(v)}</div></div>`).join('');
+    const color = RAYONS_MAP[p.category]?.color || '#00ffc8';
+    
     this.productDetail.innerHTML = `
-      <div class="detail-header">
-        <div class="detail-thumb" style="background-image:url('${p.image}')"></div>
+      <div class="detail-header" style="--rayon-color:${color};">
+        <div class="detail-gallery">
+          <div class="main-image" style="background-image:url('${p.images?.[0] || `https://picsum.photos/seed/${encodeURIComponent(p.title)}/600/600.jpg`}')"></div>
+          <div class="thumbnails">${p.images?.slice(0,4).map((img, i) => `<img src="${img}" alt="${p.title} ${i+1}" onclick="document.querySelector('.main-image').style.backgroundImage='url(${img})'" style="width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid ${i===0?'var(--accent)':'transparent'};">`).join('')}</div>
+        </div>
+        ${p.videoUrl ? `<div class="product-video"><video controls src="${p.videoUrl}" style="width:100%;border-radius:var(--radius-md);background:#000;"></video></div>` : ''}
         <div class="detail-meta">
           <h2 class="detail-title">${sanitizeHTML(p.title)}</h2>
           <span class="detail-brand" style="background:${this.getBrandColor(p.brand)}20;color:${this.getBrandColor(p.brand)};border-color:${this.getBrandColor(p.brand)}40;padding:.2rem .6rem;border-radius:999px;font-size:.7rem;font-weight:600;">${sanitizeHTML(p.brand)}</span>
-          <span class="detail-category">${sanitizeHTML(RAYONS.find(r=>r.id===p.category)?.label||p.category)}</span>
+          <span class="detail-category">${sanitizeHTML(RAYONS_MAP[p.category]?.label || p.category)}</span>
           <div class="detail-price-row">
             <span class="detail-price">${formatPrice(p.price)}</span>
-            ${p.refPrice>p.price?`<span class="detail-ref-price">${formatPrice(p.refPrice)}</span><span class="detail-discount">${formatDiscount(p.discount)}</span>`:''}
+            <span class="detail-official-price">${formatPrice(p.officialPrice)}</span>
+            <span class="detail-discount">${p.promoPercent}% PROMO</span>
           </div>
+          <div class="detail-ref">Réf: ${sanitizeHTML(p.reference)} | GTIN: ${sanitizeHTML(p.gtin)}</div>
         </div>
+      </div>
+      <div class="detail-video" style="margin:1rem 0;">
+        <video controls src="${p.videoUrl}" style="width:100%;border-radius:var(--radius-md);background:#000;"></video>
+        <p style="font-size:.7rem;color:var(--fg-muted);margin-top:.5rem;">Vidéo démo produit (source: réseaux sociaux / site officiel)</p>
       </div>
       <p class="detail-desc">${sanitizeHTML(p.description)}</p>
       <div class="detail-specs">
         <h4>Caractéristiques principales</h4>
-        <div class="specs-grid">${Object.entries(p.specs).map(([k,v])=>`<div class="spec-item"><div class="spec-label">${sanitizeHTML(k)}</div><div class="spec-value">${sanitizeHTML(v)}</div></div>`).join('')}</div>
+        <div class="specs-grid">${Object.entries(p.specs).map(([k,v]) => `<div class="spec-item"><div class="spec-label">${sanitizeHTML(k)}</div><div class="spec-value">${sanitizeHTML(v)}</div></div>`).join('')}</div>
+      </div>
+      <div class="detail-price-breakdown" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1rem;margin:1rem 0;">
+        <h4>Détail du prix</h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;font-size:.85rem;">
+          <div><span style="color:var(--fg-muted);">Prix officiel :</span> <span style="text-decoration:line-through;color:var(--fg-muted);">${formatPrice(p.officialPrice)}</span></div>
+          <div><span style="color:var(--accent);font-weight:700;">Promotion ${p.promoPercent}% :</span> <span style="color:var(--accent);font-weight:700;">-${p.promoPercent}%</span></div>
+          <div><span style="color:var(--fg-muted);">Votre prix :</span> <span style="color:var(--accent);font-weight:800;font-size:1.1rem;">${formatPrice(p.price)}</span></div>
+          <div><span style="color:var(--green);font-weight:700;">Économie :</span> <span style="color:var(--green);font-weight:700;">${formatPrice(p.officialPrice - p.price)}</span></div>
+        </div>
       </div>
       <div class="detail-actions">
-        <button class="btn-secondary" onclick="window.keffTech.addToCart('${p.id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> ${p.stock===0?'Rupture de stock':'Ajouter au panier'}</button>
-        <button class="btn-secondary" onclick="window.keffTech.openModal('${p.id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Détails</button>
+        <button class="btn-primary" onclick="window.keffTech.addToCart('${p.id}')" style="flex:1;padding:.8rem;font-size:.9rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:.5rem;"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Ajouter au panier (${formatPrice(p.price)})</button>
+        <button class="btn-secondary" onclick="window.keffTech.openModal('${p.id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Plus de détails</button>
       </div>`;
   }
 
-  // ---------- MODAL ----------
   openModal(id){
     const p = state.products.find(x => x.id === id);
     if(!p) return;
@@ -645,7 +706,7 @@ class KiffTech{
       <p class="detail-desc">${sanitizeHTML(p.description)}</p>
       <div class="detail-specs" style="margin-top:1rem">
         <h4>Spécifications complètes</h4>
-        <div class="specs-grid">${Object.entries(p.specs).map(([k,v])=>`<div class="spec-item"><div class="spec-label">${sanitizeHTML(k)}</div><div class="spec-value">${sanitizeHTML(v)}</div></div>`).join('')}</div>
+        <div class="specs-grid">${Object.entries(p.specs).map(([k,v]) => `<div class="spec-item"><div class="spec-label">${sanitizeHTML(k)}</div><div class="spec-value">${sanitizeHTML(v)}</div></div>`).join('')}</div>
       </div>
       <div class="detail-actions" style="margin-top:1.5rem">
         <button class="btn-primary" onclick="window.keffTech.addToCart('${p.id}');window.keffTech.closeModal()">${p.stock===0?'Rupture':'Ajouter au panier'}</button>
@@ -655,93 +716,144 @@ class KiffTech{
   }
   closeModal(){this.modal.hidden=true;document.body.style.overflow='';}
 
-  // ---------- CART ----------
-  addToCart(id){
-    const p = state.products.find(x => x.id === id);
-    if(!p || p.stock===0) return;
-    const existing = state.cart.find(i => i.id === id);
-    if(existing) existing.qty++;
-    else state.cart.push({...p,qty:1});
-    this.updateCartCount();
-    this.showToast(`${p.title} ajouté au panier`,'success');
+  bindCartEvents() {
+    window.addEventListener('cart:change', () => this.updateCartDisplay());
   }
-  updateCartCount(){const total=state.cart.reduce((s,i)=>s+i.qty,0);this.cartCount.textContent=total;}
-  getCartTotal(){return state.cart.reduce((s,i)=>s+i.price*i.qty,0);}
 
-  // ---------- IMPORT (inchangé) ----------
-  renderImportSources(){
-    this.importSources.innerHTML=state.importSources.map(s=>`
-      <div class="import-source">
-        <div class="source-info">
-          <div class="source-icon ${s.type}">${this.sourceIcon(s.type)}</div>
-          <div><div class="source-name">${sanitizeHTML(s.name)}</div><span class="source-status status-${s.status}">${s.status==='active'?'Actif':'En pause'}</span></div>
-        </div>
-        <div class="source-actions">
-          <button class="icon-btn-sm" onclick="window.keffTech.toggleSource('${s.id}')" aria-label="${s.status==='active'?'Pause':'Activer'}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${s.status==='active'?'<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>':'<polygon points="5 3 19 12 5 21 5 3"/>'}</svg></button>
-          <button class="icon-btn-sm" onclick="window.keffTech.editSource('${s.id}')" aria-label="Configurer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06-.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l-.06-.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2-2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
-        </div>
+  updateCartDisplay() {
+    const totals = cartManager.calculateTotals(state.productsMap);
+    this.cartCount.textContent = totals.totalItems;
+    
+    if (state.currentTab === 'cart') this.renderCartPanel();
+  }
+
+  renderCartPanel() {
+    const panel = document.getElementById('panel-cart');
+    if (!panel) return;
+    
+    const items = cartManager.getItems();
+    
+    if (items.length === 0) {
+      panel.querySelector('.panel-content').innerHTML = `
+        <div class="empty-state" style="text-align:center;padding:3rem 1rem;color:var(--fg-muted);">
+          <div style="font-size:3rem;margin-bottom:1rem;">🛒</div>
+          <h3 style="margin-bottom:.5rem;">Panier vide</h3>
+          <p>Ajoutez des produits depuis le catalogue</p>
+          <button class="btn-primary" onclick="window.keffTech.switchTab('catalog')" style="margin-top:1rem;">Aller au catalogue</button>
+        </div>`;
+      return;
+    }
+
+    const totals = cartManager.calculateTotals(state.productsMap);
+    const itemsHTML = cartManager.getItems().map(item => {
+      const product = state.productsMap.get(item.productId);
+      if (!product) return '';
+      const lineTotal = product.price * item.quantity;
+      return `
+        <article class="cart-item" style="display:flex;gap:1rem;padding:1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);margin-bottom:.75rem;align-items:center;">
+          <img src="${product.images?.[0] || `https://picsum.photos/seed/${encodeURIComponent(product.title)}/120/120.jpg`}" alt="${product.title}" style="width:80px;height:80px;object-fit:cover;border-radius:var(--radius-md);">
+          <div style="flex:1;min-width:0;">
+            <h4 style="font-size:.9rem;font-weight:600;margin-bottom:.25rem;">${sanitizeHTML(product.title)}</h4>
+            <p style="font-size:.7rem;color:var(--fg-muted);">${sanitizeHTML(product.brand)} • ${formatPrice(product.price)} x ${item.quantity}</p>
+            <div style="display:flex;align-items:center;gap:.5rem;margin-top:.5rem;">
+              <button onclick="window.keffTech.updateCartQty('${product.id}', ${item.quantity - 1})" class="icon-btn-sm" style="width:32px;height:32px;">−</button>
+              <span style="min-width:2rem;text-align:center;font-weight:600;">${item.quantity}</span>
+              <button onclick="window.keffTech.updateCartQty('${product.id}', ${item.quantity + 1})" class="icon-btn-sm" style="width:32px;height:32px;">+</button>
+              <span style="margin-left:auto;font-weight:700;color:var(--accent);">${formatPrice(product.price * item.quantity)}</span>
+              <button onclick="window.keffTech.removeFromCart('${product.id}')" class="icon-btn-sm" style="color:var(--danger);" aria-label="Supprimer">🗑️</button>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    const promoDetails = totals.details.map(d => `
+      <div style="display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--border);font-size:.8rem;">
+        <span>${d.label}</span>
+        <span style="color:var(--green);font-weight:700;">-${formatPrice(d.discount)}</span>
       </div>
     `).join('');
-  }
-  sourceIcon(type){const icons={csv:'📄',xml:'📋',json:'{ }',api:'🔌'};return icons[type]||'📦';}
-  toggleSource(id){const s=state.importSources.find(x=>x.id===id);if(s){s.status=s.status==='active'?'paused':'active';this.renderImportSources();this.showToast(`${s.name} ${s.status==='active'?'activé':'mis en pause'}`,'success');}}
-  editSource(id){this.showToast(`Édition de ${id} — démo seulement`);}
 
-  renderSchedules(){
-    this.scheduleList.innerHTML=state.schedules.map((sch,i)=>`<div class="schedule-item ${sch.enabled?'enabled':''}"><div class="schedule-info"><span class="schedule-cron">${sanitizeHTML(sch.cron)}</span><span class="schedule-next">Prochain: ${sanitizeHTML(sch.next)}</span></div><input type="checkbox" class="schedule-toggle" ${sch.enabled?'checked':''} onchange="window.keffTech.toggleSchedule(${i})"></div>`).join('');
-  }
-  renderMappings(){
-    const fields=['sku','title','price','stock','category'];
-    this.mappingsTable.innerHTML=`<table><thead><tr><th>Champ catalogue</th><th>TechData</th><th>Ingram Micro</th><th>ALSO</th><th>TD SYNNEX</th></tr></thead><tbody>${fields.map(f=>`<tr><td>${f}</td>${state.importSources.map(s=>`<td><select onchange="window.keffTech.updateMapping('${s.id}','${f}',this.value)">${['SKU','ProductName','ItemID','Description','PartNumber','Name','Reference','Title'].map(opt=>`<option value="${opt}" ${s.mapping[f]===opt?'selected':''}>${opt}</option>`).join('')}</select></td>`).join('')}</tr>`).join('')}</tbody></table>`;
-  }
-  updateMapping(sourceId,field,value){const s=state.importSources.find(x=>x.id===sourceId);if(s){s.mapping[field]=value;this.showToast(`Mapping ${field} mis à jour pour ${s.name}`);}}
-  toggleSchedule(i){state.schedules[i].enabled=!state.schedules[i].enabled;this.renderSchedules();}
-
-  // ---------- SUBSCRIPTIONS (inchangé) ----------
-  subscribe(tier){
-    if(tier==='tresor' && state.subscription!=='basic'){this.showToast('Passez d\'abord au Basic pour accéder au Trésor','error');return;}
-    state.subscription=tier;
-    this.updateSubscriptionUI();
-    this.showToast(`Abonnement ${tier==='basic'?'Basic':'Trésor'} activé (démo)`);
-  }
-  cancelSubscription(){state.subscription=null;this.updateSubscriptionUI();this.showToast('Abonnement annulé');}
-  updateSubscriptionUI(){
-    const sub=state.subscription;
-    if(sub){
-      this.currentSub.innerHTML=`<strong>${sub==='basic'?'KiffTech Basic (1€/sem)':'KiffTech Trésor (3,35€/sem)'}</strong><br><small>Renouvellement automatique simulé</small>`;
-      this.subActions.innerHTML=`<button class="btn-secondary" onclick="window.keffTech.cancelSubscription()">Annuler</button>`;
-    }else{
-      this.currentSub.textContent='Aucun abonnement actif';
-      this.subActions.innerHTML='';
-    }
-    document.querySelectorAll('.btn-subscribe').forEach(btn=>{btn.disabled=!!sub;btn.textContent=sub?`${sub==='basic'?'Basic actif':'Trésor actif'}`:btn.dataset.tier==='basic'?'S\'abonner':'Activer Trésor';});
-    this.addScheduleBtn.disabled=sub!=='tresor';
-  }
-
-  // ---------- SETTINGS (inchangé) ----------
-  bindSettings(){
-    this.globalDiscount.addEventListener('input',()=>{state.mappings.globalDiscount=+this.globalDiscount.value;this.globalDiscountVal.textContent=state.mappings.globalDiscount+'%';});
-    this.targetMargin.addEventListener('input',()=>{state.mappings.targetMargin=+this.targetMargin.value;this.targetMarginVal.textContent=state.mappings.targetMargin+'%';});
-    this.autoPriceUpdate.addEventListener('change',()=>{state.mappings.autoPriceUpdate=this.autoPriceUpdate.checked;});
-    this.verifyRefPrice.addEventListener('change',()=>{state.mappings.verifyRefPrice=this.verifyRefPrice.checked;});
+    const content = panel.querySelector('.panel-content');
+    content.innerHTML = `
+      <div style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:.5rem;">Panier (${totals.totalItems} articles)</h2>
+        <p style="color:var(--fg-muted);font-size:.8rem;">${totals.uniqueItems} produit${totals.uniqueItems > 1 ? 's' : ''} différent${totals.uniqueItems > 1 ? 's' : ''}</p>
+      </div>
+      <div class="cart-items">${itemsHTML}</div>
+      <div class="cart-summary" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:1.5rem;margin-top:1.5rem;">
+        <div style="display:flex;justify-content:space-between;padding:.5rem 0;">
+          <span>Sous-total</span>
+          <span>${formatPrice(totals.subtotal)}</span>
+        </div>
+        ${totals.details.length > 0 ? `
+          <div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:1rem 0;padding:1rem 0;">
+            <h4 style="margin-bottom:.75rem;font-size:.9rem;">Promotions appliquées</h4>
+            ${promoDetails}
+          </div>
+        ` : ''}
+        <div style="display:flex;justify-content:space-between;padding:.5rem 0;">
+          <span>Livraison</span>
+          <span style="color:${totals.shipping === 0 ? 'var(--green)' : 'var(--fg)'};font-weight:700;">${totals.shipping === 0 ? 'GRATUITE' : formatPrice(totals.shipping)}</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:.5rem 0;border-top:2px solid var(--accent);margin-top:1rem;font-size:1.1rem;font-weight:800;">
+          <span>TOTAL</span>
+          <span style="color:var(--accent);">${formatPrice(totals.finalTotal)}</span>
+        </div>
+        <div style="margin-top:1rem;padding:1rem;background:rgba(0,255,200,.05);border:1px solid var(--accent);border-radius:var(--radius-md);font-size:.75rem;color:var(--accent);">
+          💡 <strong>Rappel promos :</strong> -5% par 10 articles (douanes/taxes/livraison) • Livraison gratuite 20+ articles • <strong>25% promo + livraison/douanes/taxes gratuites à 25 articles</strong> (même non abonné)
+        </div>
+        <div style="display:flex;gap:.75rem;margin-top:1.5rem;">
+          <button class="btn-secondary" onclick="window.keffTech.switchTab('catalog')" style="flex:1;">Continuer mes achats</button>
+          <button class="btn-primary" onclick="window.keffTech.checkout()" style="flex:2;padding:1rem;font-size:1rem;">Commander - ${formatPrice(totals.finalTotal)}</button>
+        </div>
+      `;
   }
 
-  // ---------- EXPORT / IMPORT ----------
-  exportCatalog(format){
-    const data=state.products.map(p=>({id:p.id,title:p.title,category:p.category,supplier:p.supplierName,price:p.price,refPrice:p.refPrice,discount:p.discount,stock:p.stock}));
-    if(format==='csv'){
-      const headers=Object.keys(data[0]).join(',');
-      const rows=data.map(r=>Object.values(r).map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
-      this.download(headers+'\n'+rows,'kifftech-catalog.csv','text/csv');
-    }else{
-      this.download(JSON.stringify(data,null,2),'kifftech-catalog.json','application/json');
-    }
-    this.showToast(`Catalogue exporté (${format.toUpperCase()})`);
+  updateCartQty(productId, quantity) {
+    cartManager.updateQuantity(productId, quantity);
+    if (state.currentTab === 'cart') this.renderCartPanel();
   }
-  download(content,filename,mime){const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url);}
-  handleCSVImport(e){const file=e.target.files[0];if(!file) return;const reader=new FileReader();reader.onload=()=>{try{const text=reader.result;const lines=text.trim().split('\n');const headers=lines[0].split(',').map(h=>h.trim().replace(/^"|"$/g,''));const imported=lines.slice(1).map(line=>{const vals=line.split(',').map(v=>v.trim().replace(/^"|"$/g,''));const obj={};headers.forEach((h,i)=>{obj[h]=vals[i];});return obj;});this.showToast(`${imported.length} produits importés (démo)`);}catch(err){this.showToast('Erreur lecture CSV','error');}};reader.readAsText(file);this.csvImportInput.value='';}
 
-  // ---------- EVENTS ----------
+  removeFromCart(productId) {
+    cartManager.remove(productId);
+    if (state.currentTab === 'cart') this.renderCartPanel();
+  }
+
+  checkout() {
+    const totals = cartManager.calculateTotals(state.productsMap);
+    this.showToast(`Commande de ${totals.totalItems} articles pour ${formatPrice(totals.finalTotal)} - Démo seulement`, 'success');
+  }
+
+  openModal(id){
+    const p = state.products.find(x => x.id === id);
+    if(!p) return;
+    this.modalBody.innerHTML = `
+      <h3>${sanitizeHTML(p.title)}</h3>
+      <p class="detail-desc">${sanitizeHTML(p.description)}</p>
+      <div class="detail-specs" style="margin-top:1rem">
+        <h4>Spécifications complètes</h4>
+        <div class="specs-grid">${Object.entries(p.specs).map(([k,v]) => `<div class="spec-item"><div class="spec-label">${sanitizeHTML(k)}</div><div class="spec-value">${sanitizeHTML(v)}</div></div>`).join('')}</div>
+      </div>
+      <div class="detail-actions" style="margin-top:1.5rem">
+        <button class="btn-primary" onclick="window.keffTech.addToCart('${p.id}');window.keffTech.closeModal()">${p.stock===0?'Rupture':'Ajouter au panier'}</button>
+      </div>`;
+    this.modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  closeModal(){this.modal.hidden=true;document.body.style.overflow='';}
+
+  bindCartEvents() {
+    window.addEventListener('cart:change', () => this.updateCartDisplay());
+  }
+
+  updateCartDisplay() {
+    const totals = cartManager.calculateTotals(state.productsMap);
+    this.cartCount.textContent = totals.totalItems;
+    
+    if (state.currentTab === 'cart') this.renderCartPanel();
+  }
+
   bindEvents(){
     this.loadMore.querySelector('button').addEventListener('click',()=>this.loadMoreProducts());
     this.categoryFilter.addEventListener('change',this.applyFilters);
@@ -758,12 +870,11 @@ class KiffTech{
     this.modal.querySelector('.modal-backdrop').addEventListener('click',()=>this.closeModal());
     document.addEventListener('keydown',(e)=>{if(e.key==='Escape') this.closeModal();});
 
-    document.getElementById('cartBtn').addEventListener('click',()=>this.showToast(`Panier: ${state.cart.length} articles, ${formatPrice(this.getCartTotal())}`));
+    document.getElementById('cartBtn').addEventListener('click',()=>this.switchTab('cart'));
     document.getElementById('userBtn').addEventListener('click',()=>this.switchTab('settings'));
     document.getElementById('searchBtn').addEventListener('click',()=>{this.searchInput.focus();});
   }
 
-  // ---------- BIO PARTICLES ----------
   initBioParticles(){
     const container=document.getElementById('bioParticles');
     if(!container) return;
@@ -788,13 +899,10 @@ class KiffTech{
     }
   }
 
-  // ---------- TOASTS ----------
   showToast(msg,type='success'){const t=document.createElement('div');t.className=`toast ${type}`;t.textContent=msg;this.toastContainer.appendChild(t);setTimeout(()=>{t.style.animation='toastIn .3s reverse';setTimeout(()=>t.remove(),300);},3500);}
 
-  // ---------- SW ----------
   registerSW(){if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(console.warn);}}
 
-  // ---------- INSTALL ----------
   setupInstallPrompt(){
     let deferredPrompt=null;
     const installBtn=document.createElement('button');
@@ -808,7 +916,17 @@ class KiffTech{
     installBtn.addEventListener('click',async()=>{if(!deferredPrompt) return;deferredPrompt.prompt();const{outcome}=await deferredPrompt.userChoice;if(outcome==='accepted') installBtn.style.display='none';deferredPrompt=null;});
     if(window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) installBtn.style.display='none';
   }
+
+  bindCartEvents() {
+    window.addEventListener('cart:change', () => this.updateCartDisplay());
+  }
+
+  updateCartDisplay() {
+    const totals = cartManager.calculateTotals(state.productsMap);
+    this.cartCount.textContent = totals.totalItems;
+    
+    if (state.currentTab === 'cart') this.renderCartPanel();
+  }
 }
 
-// ---------- BOOT ----------
 document.addEventListener('DOMContentLoaded',()=>{window.keffTech=new KiffTech();});
